@@ -1,0 +1,105 @@
+<footer>
+    <div class="footer-wrappr " style="background-color: #1C4E8F">
+        <div class="footer-area footer-padding ">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-footer-caption mb-50">
+                            <!-- logo -->
+                            <div class="footer-logo mb-25">
+                                <a href="/"><img src="assets/img/loader2.png" alt="" style="width: 30%"></a>
+                            </div>
+                            <div class="footer-tittle mb-50">
+                                <p> Reality Of Imagination </p>
+                            </div>
+                            <!-- Form -->
+                            {{-- <div class="footer-form">
+                                <div id="mc_embed_signup">
+                                    <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative mail_part" novalidate="true">
+                                        <input type="email" name="EMAIL" id="newsletter-form-email" placeholder=" Email Address " class="placeholder hide-on-focus" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'">
+                                        <div class="form-icon">
+                                            <button type="submit" name="submit" id="newsletter-submit" class="email_icon newsletter-submit button-contactForm">
+                                                Subscribe
+                                            </button>
+                                        </div>
+                                        <div class="mt-10 info"></div>
+                                    </form>
+                                </div>
+                            </div> --}}
+                            <!-- social -->
+                            <div class="footer-social mt-50">
+                                <a href="tel:+233 55 696 305"><i class="ti-tablet"></i></a>
+                                <a href="https://www.linkedin.com/in/emmanuel-kofi-ketsi/"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.behance.net/kekstudiosofficial"><i class="fab fa-behance"></i></a>
+                                <a href="https://www.instagram.com/kekstudios_official?igsh=azBuejV0YnplMnVs"><i class="fab fa-instagram"></i></a>
+                                <a href="mailto:kekstudiosofficial1@gmail.com"><i class="ti-email"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1"></div>
+                    {{-- <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Company</h4>
+                                <ul>
+                                    <li><a href="#">Why choose us</a></li>
+                                    <li><a href="#"> Review</a></li>
+                                    <li><a href="#">Customers</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Carrier</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> --}}
+                    <div class="col-xl-3 col-lg-2 col-md-4 col-sm-5">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Our Services</h4>
+                                <ul>
+                                    <li><a href="#">Brand Identity Design</a></li>
+                                    <li><a href="#">Commercial Printing</a></li>
+                                    <li><a href="#">Web Development</a></li>
+                                    <li><a href="#">Mobile App Development</a></li>
+                                    <li><a href="#">UI/UX Design</a></li>
+                                    <li><a href="#">Event & Campaign Branding</a></li>
+                                    <li><a href="#">Creative Strategy & Consulting</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Support</h4>
+                                <ul>
+                                    <li><a href="#">Technology</a></li>
+                                    <li><a href="#">  Products</a></li>
+                                    <li><a href="#">Customers</a></li>
+                                    <li><a href="#">Quality</a></li>
+                                    <li><a href="#">Sales geography</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer-bottom area -->
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="footer-border">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="footer-copy-right text-center">
+                                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> | KEKStudios
+                                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
