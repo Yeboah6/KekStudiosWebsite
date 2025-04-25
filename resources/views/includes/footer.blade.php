@@ -7,25 +7,11 @@
                         <div class="single-footer-caption mb-50">
                             <!-- logo -->
                             <div class="footer-logo mb-25">
-                                <a href="/"><img src="assets/img/loader2.png" alt="" style="width: 30%"></a>
+                                <a href="/"><img src="assets/img/loader1.png" alt="" style="width: 30%"></a>
                             </div>
                             <div class="footer-tittle mb-50">
                                 <p> Reality Of Imagination </p>
                             </div>
-                            <!-- Form -->
-                            {{-- <div class="footer-form">
-                                <div id="mc_embed_signup">
-                                    <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative mail_part" novalidate="true">
-                                        <input type="email" name="EMAIL" id="newsletter-form-email" placeholder=" Email Address " class="placeholder hide-on-focus" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'">
-                                        <div class="form-icon">
-                                            <button type="submit" name="submit" id="newsletter-submit" class="email_icon newsletter-submit button-contactForm">
-                                                Subscribe
-                                            </button>
-                                        </div>
-                                        <div class="mt-10 info"></div>
-                                    </form>
-                                </div>
-                            </div> --}}
                             <!-- social -->
                             <div class="footer-social mt-50">
                                 <a href="tel:+233 55 696 305"><i class="ti-tablet"></i></a>
@@ -70,13 +56,13 @@
                     <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5">
                         <div class="single-footer-caption mb-50">
                             <div class="footer-tittle">
-                                <h4>Support</h4>
+                                <h4>Quick Links</h4>
                                 <ul>
-                                    <li><a href="#">Technology</a></li>
-                                    <li><a href="#">  Products</a></li>
-                                    <li><a href="#">Customers</a></li>
-                                    <li><a href="#">Quality</a></li>
-                                    <li><a href="#">Sales geography</a></li>
+                                    <li><a href="/">Home</a></li>
+                                    <li><a href="/about-us">About us</a></li>
+                                    <li><a href="/services">Services</a></li>
+                                    <li><a href="/portfolio">Portfolio</a></li>
+                                    <li><a href="/contact">Contact</a></li>
                                 </ul>
                             </div>
                         </div>

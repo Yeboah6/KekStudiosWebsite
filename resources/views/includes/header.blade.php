@@ -6,7 +6,7 @@
 
 @media (max-width: 550px) {
     .kek-logo {
-        width: 15%
+        width: 10%
     }
 }
 
@@ -14,15 +14,15 @@
 
 <header>
     <!-- Header Start -->
-    <div class="header-area header-transparent">
-        <div class="main-header ">
+    <div class="header-area header-transparent" style="background: #0B1F3A">
+        <div class="main-header">
             <div class="header-bottom  header-sticky">
                 <div class="container-fluid">
                     <div class="row align-items-center">
                         <!-- Logo -->
                         <div class="col-xl-2 col-lg-2">
                             <div class="logo">
-                                <a href="/"><img class="kek-logo" src="assets/img/loader2.png" alt=""></a>
+                                <a href="/"><img class="kek-logo" src="assets/img/loader1.png" alt=""></a>
                             </div>
                         </div>
                         <div class="col-xl-10 col-lg-10">

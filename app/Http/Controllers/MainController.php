@@ -56,4 +56,8 @@ class MainController extends Controller
     public function portfolio() {
         return view('pages.portfolio');
     }
+
+    public function team() {
+        return view('pages.our-team');
+    }
 }

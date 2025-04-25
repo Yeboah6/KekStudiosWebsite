@@ -31,14 +31,14 @@
                             </div>
                             <div class="col-xl-6 col-lg-6">
                                 <div class="hero__img d-none d-lg-block f-right">
-                                    <img src="assets/img/hero/hero_right.png" alt="" data-animation="fadeInRight" data-delay="1s">
+                                    <img src="assets/img/background.png" alt="" data-animation="fadeInRight" data-delay="1s" style="width: 115%">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>      
                 <!-- Single Slider -->
-                <div class="single-slider d-flex align-items-center slider-height ">
+                {{-- <div class="single-slider d-flex align-items-center slider-height ">
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-lg-6 col-md-9 ">
@@ -62,7 +62,7 @@
                             </div>
                         </div>
                     </div>
-                </div>      
+                </div>       --}}
             </div>
             <!-- Slider Shape -->
             <div class="slider-shape d-none d-lg-block">
@@ -244,7 +244,7 @@
                 <div class="col-xl-5 col-lg-5 col-md-8 col-sm-10">
                     <!-- about-img -->
                     <div class="about-img ">
-                        <img src="assets/img/gallery/about1.png" alt="">
+                        <img src="assets/img/Mockup.jpg" alt="" style="width: 100%;border-radius: 20px;">
                     </div>
                 </div>
                 <div class="col-xl-7 col-lg-7 col-md-12">

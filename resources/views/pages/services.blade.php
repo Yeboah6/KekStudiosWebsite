@@ -8,7 +8,7 @@
 
     <main>
         <!-- Slider Area Start-->
-        <div class="slider-area slider-bg ">
+        <div class="slider-area slider-bg " style="background: #0B1F3A">
             <!-- Single Slider -->
             <div class="single-slider d-flex align-items-center slider-height2">
                 <div class="container">
@@ -16,7 +16,6 @@
                         <div class="col-xl-8 col-lg-9 col-md-12 ">
                             <div class="hero__caption hero__caption2 text-center">
                                 <h1 data-animation="fadeInLeft" data-delay=".6s ">Our Services</h1>
-                                {{-- <p data-animation="fadeInLeft" data-delay=".8s">Supercharge your WordPress hosting with detailed website analytics, marketing tools. Our experts are just part of the reason Bluehost is the ideal home for your WordPress website. We're here to help you succeed!</p> --}}
                             </div>
                         </div>
                     </div>
