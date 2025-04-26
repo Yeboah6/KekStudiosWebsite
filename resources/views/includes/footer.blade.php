@@ -7,7 +7,7 @@
                         <div class="single-footer-caption mb-50">
                             <!-- logo -->
                             <div class="footer-logo mb-25">
-                                <a href="/"><img src="assets/img/loader1.png" alt="" style="width: 30%"></a>
+                                <a href="/"><img src="../assets/img/loader1.png" alt="" style="width: 30%"></a>
                             </div>
                             <div class="footer-tittle mb-50">
                                 <p> Reality Of Imagination </p>
@@ -43,7 +43,7 @@
                                 <h4>Our Services</h4>
                                 <ul>
                                     <li><a href="#">Brand Identity Design</a></li>
-                                    <li><a href="#">Commercial Printing</a></li>
+                                    <li><a href="/services/commercial-printing">Commercial Printing</a></li>
                                     <li><a href="#">Web Development</a></li>
                                     <li><a href="#">Mobile App Development</a></li>
                                     <li><a href="#">UI/UX Design</a></li>
@@ -63,6 +63,7 @@
                                     <li><a href="/services">Services</a></li>
                                     <li><a href="/portfolio">Portfolio</a></li>
                                     <li><a href="/contact">Contact</a></li>
+                                    <li><a href="/our-team">Meet our Team</a></li>
                                 </ul>
                             </div>
                         </div>

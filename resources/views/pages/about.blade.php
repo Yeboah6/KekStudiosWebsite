@@ -629,10 +629,11 @@
     }
     
     .welcome-title {
-        font-size: 3rem;
+        font-size: 4rem;
         margin-bottom: 20px;
-        color: #333;
+        color: #1C4E8F;
         text-align: center;
+        font-weight: bold
     }
     
     .separator {
@@ -649,10 +650,11 @@
     }
     
     .vmcv-title {
-        font-size: 2.2rem;
+        font-size: 30px;
         margin-bottom: 20px;
         text-align: center;
         color: #1C4E8F;
+        font-weight: bold;
     }
     
     .vmcv-subtitle {
@@ -715,9 +717,10 @@
     
     .values-title {
         text-align: center;
-        font-size: 2rem;
+        font-size: 30px;
         margin: 30px 0;
         color: #1C4E8F;
+        font-weight: bold
     }
     
     .core-values-grid {
@@ -776,7 +779,8 @@
     }
     
     .journey-title {
-        font-size: 3rem;
+        font-size: 30px;
+        font-weight: bold;
         margin-bottom: 40px;
         text-align: center;
         color: #fff;
@@ -805,7 +809,7 @@
     }
     
     .year-circle {
-        background-color: #F4A300;
+        background-color: #DAA33E;
         color: white;
         width: 80px;
         height: 80px;
@@ -819,7 +823,8 @@
     }
     
     .journey-title-block {
-        font-size: 2rem;
+        font-size: 30px;
+        font-weight: bold;
         margin-bottom: 20px;
         color: #fff;
     }
@@ -856,7 +861,8 @@
     }
     
     .team-title {
-        font-size: 3rem;
+        font-size: 30px;
+        font-weight: bold;
         margin-top: 10px;
     }
     
@@ -868,21 +874,26 @@
     .view-team-btn {
         display: inline-block;
         padding: 12px 30px;
-        border: 2px solid #F4A300;
+        border: 2px solid #DAA33E;
         color: #333;
         text-decoration: none;
         font-weight: bold;
         transition: all 0.3s ease;
         margin-top: 20px;
+        border-radius: 30px;
     }
     
     .view-team-btn:hover {
-        background-color: #F4A300;
-        color: white;
+        background-color: #DAA33E;
+        color: #0B1F3A;
     }
-    
+
     /* Responsive styles */
     @media screen and (max-width: 991px) {
+
+        .about-content p {
+            font-size: 2rem;
+        }
         .about-grid,
         .journey-grid,
         .team-header,
@@ -918,7 +929,7 @@
         }
         
         .vm-card h3 {
-            font-size: 1.5rem;
+            font-size: 2rem;
         }
         
         .journey-content {
@@ -928,6 +939,10 @@
         .vm-card, .value-card {
             padding: 20px;
         }
+
+        .value-content {
+        font-size: 1.8rem;
+    }
     }
     
     @media screen and (max-width: 767px) {
@@ -956,12 +971,12 @@
         .value-icon {
             width: 50px;
             height: 50px;
-            font-size: 20px;
+            font-size: 5rem;
         }
         
         .journey-title-block,
         .value-card h4 {
-            font-size: 1.3rem;
+            font-size: 3rem;
         }
         
         .view-team-btn {
@@ -979,9 +994,20 @@
         .core-values-grid {
             grid-template-columns: 1fr;
         }
+
+        .value-content {
+        font-size: 1.8rem;
+        }
+
+        .vm-content p{
+        font-size: 2rem;
+        }
     }
     
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 550px) {
+        .value-content {
+        font-size: 2.5rem;
+    }
         .about-section,
         .journey-section,
         .team-section,
@@ -998,12 +1024,16 @@
         .team-title,
         .vmcv-title,
         .values-title {
-            font-size: 2.5rem;
+            font-size: 4rem;
         }
         
-        .journey-title-block,
         .vm-card h3 {
-            font-size: 1.2rem;
+            font-size: 3rem;
+        }
+
+        .journey-title-block
+         {
+            font-size: 2.6rem;
         }
         
         .year-circle,
@@ -1014,14 +1044,15 @@
         }
         
         .value-icon {
-            width: 45px;
-            height: 45px;
-            font-size: 18px;
+            width: 80px;
+            height: 80px;
+            font-size: 5rem;
         }
         
         .view-team-btn {
             display: block;
             text-align: center;
+            font-size: 2rem;
         }
         
         .slider-height3 {
@@ -1033,7 +1064,43 @@
         }
         
         .vmcv-subtitle {
+            font-size: 2.3rem;
             margin-bottom: 30px;
+        }
+
+        .vm-content p{
+        font-size: 2.5rem;
+        }
+
+        .journey-text {
+            font-size: 2.5rem;
+            line-height: 1.8;
+        }
+
+        .about-caption ul {
+            display: block
+        }
+
+        .about-caption ul li {
+            font-size: 2.5rem;
+        }
+
+        .about-caption ul li img {
+            width: 7%;
+        }
+
+        .about-content p {
+            font-size: 2.5rem;
+        }
+
+        .year-circle {
+            width: 60px;
+            height: 60px;
+            font-size: 16px;
+        }
+
+        .team-description {
+            font-size: 2.5rem
         }
     }
 </style>
@@ -1046,16 +1113,13 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-xl-8 col-lg-9 col-md-12">
                         <div class="hero__caption hero__caption3 text-center">
-                            <h1 data-animation="fadeInLeft" data-delay=".6s">About Us</h1>
+                            <h1 data-animation="fadeInLeft" data-delay=".6s" style="color: #DAA33E">About Us</h1>
                         </div>
                     </div>
                 </div>
             </div>
         </div>    
         <!-- Slider Shape -->
-        <div class="slider-shape d-none d-lg-block">
-            <img class="slider-shape1" src="assets/img/hero/top-left-shape.png" alt="">
-        </div>
     </div>
     <!-- Slider Area End -->
 
@@ -1228,16 +1292,42 @@
                         rooted values with modern design innovation.
                     </p>
                     <br>
-                    {{-- <p class="journey-text">
-                        On 7th September 2018, Pizzaman was moved from the apartment in Kotei to a small shop at Ayeduase, opposite the Victory Towers Hostel. From that period, pizza was sold daily. A revenue of GHC12,000 was generated in the first month of operation, which looked promising. October 2018 would have been a great month until there was a student demonstration at KNUST which led to the closedown of the pizzeria since the market was targeted at students during those moments.
-                    </p> --}}
                 </div>
-                
-                <div class="journey-milestone">
-                    <h3 class="journey-title-block">Innovators</h3>
-                    <p class="journey-text">
-                        After several months of selling pizzas, management saw the need to introduce a sister brand called Chickenman in January 2020.
-                    </p>
+
+                <div class="col-xl col-lg-7 col-md">
+                    <div class="about-caption">
+                        <!-- Section Tittle -->
+                        <div class="journey-milestone">
+                            <h2 class="journey-title-block">WHO WE SERVE</h2>
+                        </div>
+                        <ul>
+                            <li style="margin-bottom: 15px;">
+                                <img src="assets/img/icon/right.svg" alt="" >
+                                Startups and Entrepreneurs who need to pitch their 
+                                ideas and secure funding.
+                            </li>
+                            <li style="margin-bottom: 15px;">
+                                <img src="assets/img/icon/right.svg" alt="" >
+                                Corporate Brands seeking polished business 
+                                documents and standout brand identities.
+                            </li>
+                            <li style="margin-bottom: 15px;">
+                                <img src="assets/img/icon/right.svg" alt="">
+                                Corporate Brands seeking polished business 
+                                documents and standout brand identities.
+                            </li>
+                            <li style="margin-bottom: 15px;">
+                                <img src="assets/img/icon/right.svg" alt="">
+                                Agencies and Teams needing expert design support 
+                                for presentations, UI/UX, and social media.
+                            </li>
+                            <li style="margin-bottom: 15px;">
+                                <img src="assets/img/icon/right.svg" alt="">
+                                Small Businesses looking to build a strong brand 
+                                presence and communicate their vision clearly.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

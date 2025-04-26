@@ -10,7 +10,8 @@
     h1 {
         text-align: center;
         margin-bottom: 30px;
-        font-size: 2.5rem;
+        font-size: 30px;
+        font-weight: bold;
     }
     
     .menu-filters {
@@ -187,16 +188,13 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-xl-8 col-lg-9 col-md-12">
                         <div class="hero__caption hero__caption3 text-center">
-                            <h1 data-animation="fadeInLeft" data-delay=".6s">Portfolio</h1>
+                            <h1 data-animation="fadeInLeft" data-delay=".6s" style="color: #DAA33E">Portfolio</h1>
                         </div>
                     </div>
                 </div>
             </div>
         </div>    
         <!-- Slider Shape -->
-        <div class="slider-shape d-none d-lg-block">
-            <img class="slider-shape1" src="assets/img/hero/top-left-shape.png" alt="">
-        </div>
     </div>
     <!-- Slider Area End -->
     
@@ -218,8 +216,8 @@
                 <button class="filter-btn" data-category="print">Commercial Printing</button>
                 <button class="filter-btn" data-category="web">Web & Mobile Apps</button>
                 <button class="filter-btn" data-category="ui">UI/UX Design</button>
-                <button class="filter-btn" data-category="event">Event Branding</button>
-                <button class="filter-btn" data-category="strategy">Creative Strategy</button>
+                <button class="filter-btn" data-category="event">Event & Campaign Branding</button>
+                <button class="filter-btn" data-category="strategy">Creative Strategy & Consulting</button>
             </div>
 
             <div class="menu-container">
@@ -236,7 +234,7 @@
                     <!-- Menu Item 2 -->
                     <div class="menu-item" data-category="brand">
                         <div class="item-image">
-                            <img src="/api/placeholder/400/250" alt="Brand Identity">
+                            <img src="assets/img/KEYSTONE1.jpg" alt="Brand Identity">
                         </div>
                         <div class="item-details">
                             <h3 class="item-title">Logo Design</h3>
@@ -254,7 +252,7 @@
                     </div>
                     
                     <!-- Menu Item 4 -->
-                    <div class="menu-item" data-category="web">
+                    {{-- <div class="menu-item" data-category="web">
                         <div class="item-image">
                             <img src="/api/placeholder/400/250" alt="Web Development">
                         </div>
@@ -262,10 +260,20 @@
                             <h3 class="item-title">E-commerce Website</h3>
                             <p class="item-description">Responsive online store built with modern frameworks and seamless checkout experience</p>
                         </div>
+                    </div> --}}
+
+                    <div class="menu-item" data-category="brand">
+                        <div class="item-image">
+                            <img src="assets/img/KEYSTONE REALTY-02.jpg" alt="Brand Identity">
+                        </div>
+                        <div class="item-details">
+                            <h3 class="item-title">Logo Design</h3>
+                            <p class="item-description">Distinctive brand identity created with careful attention to market positioning and core values</p>
+                        </div>
                     </div>
                     
                     <!-- Menu Item 5 -->
-                    <div class="menu-item" data-category="ui">
+                    {{-- <div class="menu-item" data-category="ui">
                         <div class="item-image">
                             <img src="/api/placeholder/400/250" alt="UI Design">
                         </div>
@@ -273,7 +281,7 @@
                             <h3 class="item-title">Mobile App UI</h3>
                             <p class="item-description">Intuitive user interface design focused on accessibility and user experience best practices</p>
                         </div>
-                    </div>
+                    </div> --}}
                     
                     <!-- Menu Item 6 -->
                     <div class="menu-item" data-category="print">
@@ -283,19 +291,49 @@
                             <p class="item-description">Well-organized catalog layout with professional photography and compelling descriptions</p>
                         </div>
                     </div>
+
+                    <div class="menu-item" data-category="event">
+                        <div class="item-image">
+                            <img src="assets/img/SELLERS SHOP PULL UPS 2.jpg" alt="Event Branding">
+                        </div>
+                        <div class="item-details">
+                            <h3 class="item-title">Conference Branding</h3>
+                            <p class="item-description">Cohesive visual identity system for industry event including signage and promotional materials</p>
+                        </div>
+                    </div>
                     
                     <!-- Additional Items -->
                     <div class="menu-item" data-category="brand">
                         <div class="item-image">
-                            <img src="/api/placeholder/400/250" alt="Brand Strategy">
+                            <img src="assets/img/KEYSTONE REALTY_KEYSTON 1 copy-05.jpg" alt="Brand Strategy">
                         </div>
                         <div class="item-details">
                             <h3 class="item-title">Brand Guidelines</h3>
                             <p class="item-description">Comprehensive brand identity system with detailed usage guidelines and applications</p>
                         </div>
                     </div>
+
+                    <div class="menu-item" data-category="event">
+                        <div class="item-image">
+                            <img src="assets/img/image.jpg" alt="Event Branding">
+                        </div>
+                        <div class="item-details">
+                            <h3 class="item-title">Conference Branding</h3>
+                            <p class="item-description">Cohesive visual identity system for industry event including signage and promotional materials</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="brand">
+                        <div class="item-image">
+                            <img src="assets/img/KEYSTONE REALTY_KEYSTON 1.jpg" alt="Brand Identity">
+                        </div>
+                        <div class="item-details">
+                            <h3 class="item-title">Logo Design</h3>
+                            <p class="item-description">Distinctive brand identity created with careful attention to market positioning and core values</p>
+                        </div>
+                    </div>
                     
-                    <div class="menu-item" data-category="web">
+                    {{-- <div class="menu-item" data-category="web">
                         <div class="item-image">
                             <img src="/api/placeholder/400/250" alt="Web Application">
                         </div>
@@ -303,15 +341,34 @@
                             <h3 class="item-title">Dashboard Design</h3>
                             <p class="item-description">Data visualization interface designed for clarity and efficient information presentation</p>
                         </div>
-                    </div>
+                    </div> --}}
                     
                     <div class="menu-item" data-category="event">
                         <div class="item-image">
-                            <img src="/api/placeholder/400/250" alt="Event Branding">
+                            <img src="assets/img/Mockup 1.png" alt="Event Branding">
                         </div>
                         <div class="item-details">
                             <h3 class="item-title">Conference Branding</h3>
                             <p class="item-description">Cohesive visual identity system for industry event including signage and promotional materials</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="brand">
+                        <div class="item-image">
+                            <img src="assets/img/Mockup.jpg" alt="Brand Strategy">
+                        </div>
+                        <div class="item-details">
+                            <h3 class="item-title">Brand Guidelines</h3>
+                            <p class="item-description">Comprehensive brand identity system with detailed usage guidelines and applications</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="brand">
+                        <div class="item-image">
+                            <img src="assets/img/image2.jpg" alt="Brand Strategy">
+                        </div>
+                        <div class="item-details">
+                            <h3 class="item-title">Brand Guidelines</h3>
+                            <p class="item-description">Comprehensive brand identity system with detailed usage guidelines and applications</p>
                         </div>
                     </div>
                 </div>

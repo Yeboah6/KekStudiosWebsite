@@ -22,7 +22,7 @@
                         <!-- Logo -->
                         <div class="col-xl-2 col-lg-2">
                             <div class="logo">
-                                <a href="/"><img class="kek-logo" src="assets/img/loader1.png" alt=""></a>
+                                <a href="/"><img class="kek-logo" src="../assets/img/loader1.png" alt=""></a>
                             </div>
                         </div>
                         <div class="col-xl-10 col-lg-10">

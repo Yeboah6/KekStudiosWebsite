@@ -13,3 +13,8 @@ Route::get('/testimony', [MainController::class, 'testimony']) -> name('testimon
 
 Route::get('/services/{service}', [MainController::class, 'show'])->name('services.show')
 ->where('service', 'brand-identity-design|commercial-printing|web-mobile-applications|ui-ux-design|event-campaign-branding|creative-strategy-consulting');
+
+Route::post('/services/{service}', [MainController::class, 'store'])->name('services.store')
+->where('service', 'brand-identity-design|commercial-printing|web-mobile-applications|ui-ux-design|event-campaign-branding|creative-strategy-consulting');
+
+Route::get('/booking/confirmation', [MainController::class, 'confirmation']) -> name('booking.confirmation');
