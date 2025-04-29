@@ -7,26 +7,6 @@
 @include('includes.header')
 
 <style>
-    /* * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    } */
-    
-    /* body {
-        background-color: #f5f5f5;
-        color: #333;
-        line-height: 1.6;
-    } */
-    
-    /* header {
-        background-color: #001f3f;
-        color: white;
-        padding: 2rem 0;
-        text-align: center;
-    } */
-    
     h1 {
         font-size: 3rem;
         font-weight: 600;
@@ -121,11 +101,137 @@
         width: 100%;
     }
     
+    .values-title {
+        text-align: center;
+        font-size: 30px;
+        margin: 30px 0;
+        color: #1C4E8F;
+        font-weight: bold
+    }
+    
+    .core-values-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+    
+    .value-card {
+        border-radius: 10px;
+        padding: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .value-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+    
+    .value-icon img{
+        width: 50%;
+    }
+    
+    .value-card h4 {
+        color: #1C4E8F;
+        font-size: 2rem;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+    
+    .value-content {
+        color: #666;
+        line-height: 1.6;
+        font-size: 1.5rem;
+    }
+    
     @media (max-width: 768px) {
         .case-study-content {
             grid-template-columns: 1fr;
         }
     }
+
+    @media (max-width: 550px) {
+        .core-values-grid {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .value-icon img{
+            width: 60%;
+        }
+
+        .case-study-header h2 {
+            color: #001f3f;
+            font-size: 3rem;
+        }
+    }
+    
+        .services {
+            max-width: 1200px;
+            margin: 3rem auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 0 1rem;
+        }
+        
+        .service-card {
+            width: 100%;
+            height: 250px;
+            gap: 50px;
+            max-width: 350px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            background: #fff
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+        
+        .service-image {
+            /* height: 250px; */
+            width: 105%;
+            object-fit: cover;
+        }
+        
+        .service-label {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(12, 30, 62, 0.85);
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .service-name {
+            display: flex;
+            align-items: center;
+        }
+        
+        /* .service-icon {
+            height: 20px;
+            width: 20px;
+            background-color: #d4af37;
+            margin-right: 8px;
+            display: inline-block;
+        } */
+        
+        .arrow {
+            font-size: 1.5rem;
+        }
 </style>
 
     <main>
@@ -151,28 +257,20 @@
         <!-- Slider Area End -->
         
         <!--? Pricing Card Start -->
-        <!--? Pricing Card Start -->
-        <section class="pricing-card-area pricing-card-area2 fix">
+        <section class="pricing-card-area pricing-card-area2 fix ">
             <div class="container">
-                <div class="row">
+                <div class="row services">
                     <!-- Service Cards -->
                     @foreach ($services as $slug => $service)
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-4">
-                            <div class="single-card text-center mb-30 h-100">
-                                <div class="card-top">
-                                    <img src="{{$service['img']}}" alt="">
-                                    <h4>{{$service['title']}}</h4>
-                                </div>
-                                <div class="card-bottom">
-                                    <ul>
-                                        @foreach($service['works'] as $work)
-                                            <li>{{ $work }}</li>
-                                        @endforeach
-                                    </ul>
-                                    <a href="{{ route('services.show', $slug) }}" class="borders-btn">Book Now</a>
-                                </div>
+                    <div class="service-card">
+                        <img src="{{$service['img']}}" alt="{{$service['title']}}" class="service-image">
+                        <div class="service-label">
+                            <div class="service-name">
+                                <a href="{{ route('services.show', $slug) }}"><strong>{{$service['title']}}</strong></a>
                             </div>
+                            
                         </div>
+                    </div>
                     @endforeach
                 </div>
             </div>
@@ -194,7 +292,7 @@
                             <p>The refreshed brand identity established AXAM Resource Limited as a modern and trustworthy construction firm, reinforcing its mission to build with purpose and visual appeal across all platforms.</p>
                         </div>
                         <div class="case-study-image">
-                            <img src="/api/placeholder/500/300" alt="AXAM Resources Limited branded green truck">
+                            <img src="assets/img/axam.png" alt="AXAM Resources Limited branded green truck">
                         </div>
                     </div>
                 </div>
@@ -217,7 +315,7 @@
                             <p>The new brand identity and corporate documents elevated Christell Ushering Agency's presentation, attracting higher-profile clients and boosting their credibility in the event industry. Their enhanced professional image led to increased client inquiries and secured several high-value contracts.</p>
                         </div>
                         <div class="case-study-image">
-                            <img src="/api/placeholder/500/300" alt="Christell Ushering Agency branded materials">
+                            <img src="assets/img/Cover.jpg" alt="Christell Ushering Agency branded materials">
                         </div>
                     </div>
                 </div>
@@ -237,12 +335,28 @@
                             <p>The professionally designed business plan enhanced Glaft Gh. Limited's credibility, making a strong impression on potential investors. It effectively communicated their vision and growth strategy, opening doors to new opportunities and driving substantial business growth.</p>
                         </div>
                         <div class="case-study-image">
-                            <img src="/api/placeholder/500/300" alt="Glaft Gh. Limited business plan">
+                            <img src="assets/img/glaft.png" alt="Glaft Gh. Limited business plan">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <section class="vmcv-section">
+            <div class="container">
+                <!-- Core Values Section -->
+                <h3 class="values-title">Our Clients</h3>
+                <div class="core-values-grid">
+                    @foreach ($clients as $client)
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <img src="{{$client['logo']}}" alt="">
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        </section>
     </main>
 
     @include('includes.footer')

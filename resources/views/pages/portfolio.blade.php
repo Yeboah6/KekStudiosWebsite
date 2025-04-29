@@ -13,7 +13,6 @@
         font-size: 30px;
         font-weight: bold;
     }
-    
     .menu-filters {
         display: flex;
         justify-content: center;
@@ -31,151 +30,108 @@
         font-weight: bold;
         transition: all 0.3s ease;
         margin-bottom: 5px;
-        font-size: 14px;
+        font-size: 18px;
     }
     
     .filter-btn.active {
-        background-color: #F4A300;
+        background-color: #DAA33E;
         color: white;
     }
     
     .filter-btn:not(.active) {
         background-color: transparent;
-        color: #000;
+        color: #0B1F3A;
     }
     
     .filter-btn:hover:not(.active) {
         background-color: rgba(26, 38, 57, 0.1);
     }
     
-    .menu-grid {
+    .container {
+        max-width: 1200px;
+        padding: 0 1rem;
+    }
+
+    .projects-grid {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
-        padding: 0 15px;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 2rem;
     }
     
-    .menu-item {
-        border-radius: 10px;
-        overflow: hidden;
-        /* background-color: #f7f7f7; */
-        transition: all 0.5s ease;
-        transform-origin: center;
-        opacity: 1;
-        transform: scale(1);
-        margin-bottom: 0;
-    }
-    
-    .menu-item.hidden {
-        opacity: 0;
-        transform: scale(0.8);
-        height: 0;
-        margin-bottom: -20px;
-        pointer-events: none;
-        position: absolute;
-    }
-    
-    .item-image {
-        height: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #f0f0f0;
-    }
-    
-    .item-image img {
+    .category-container {
+        display: none;
         width: 100%;
-        height: auto;
-        display: block;
+        grid-column: 1 / -1;
+        margin-top: 1rem;
     }
     
-    .item-details {
-        padding: 15px;
-        background-color: #0B1F3A;
-        color: white;
-        border-radius: 0 0 10px 10px;
-    }
-    
-    .item-title {
-        font-size: 1.3rem;
-        color: #fff;
-        margin-bottom: 8px;
-    }
-    
-    .item-description {
-        font-size: 1rem;
-        margin-bottom: 15px;
-        color: #ccc;
-    }
-    
-    .item-footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .item-price {
-        font-weight: bold;
-    }
-    
-    .add-btn {
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        background-color: #f39c12;
-        color: white;
-        border: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .project-card {
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        transition: transform 0.3s ease;
         cursor: pointer;
-        transition: transform 0.2s ease;
     }
     
-    .add-btn:hover {
-        transform: scale(1.1);
+    .project-card:hover {
+        transform: translateY(-5px);
     }
     
-    .menu-container {
-        position: relative;
-        min-height: 400px;
+    .project-card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
     }
     
-    /* Responsive Styles */
-    @media (min-width: 576px) {
-        .filter-btn {
-            padding: 8px 18px;
-            font-size: 15px;
-        }
+    .project-info {
+        padding: 1rem;
     }
     
-    @media (min-width: 768px) {
-        .menu-grid {
-            grid-template-columns: repeat(2, 1fr);
-        }
-        
-        .menu-filters {
-            gap: 12px;
-        }
+    .project-info h3 {
+        margin-bottom: 0.5rem;
+        color: #104986;
     }
     
-    @media (min-width: 992px) {
-        .menu-grid {
-            grid-template-columns: repeat(3, 1fr);
+    .project-info p {
+        color: #666;
+        font-size: 0.9rem;
+    }
+    
+    .category-projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    
+    .sub-project {
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        /* padding: 1rem; */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+    
+    .sub-project img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+    }
+
+    @media (max-width:550px) {
+        .sub-project img {
+            height: 250px;
         }
-        
-        .item-title {
-            font-size: 1.5rem;
+
+        .project-card img {
+            height: 400px;
         }
-        
-        .item-description {
-            font-size: 1.1rem;
-        }
-        
-        /* .filter-btn {
-            padding: 8px 20px;
-            font-size: 16px;
-        } */
+
+        .sub-project img {
+        height: 150px;
+    }
     }
 </style>
 
@@ -210,207 +166,41 @@
                 </div>
             </div>
             
-            <div class="menu-filters">
-                <button class="filter-btn active" data-category="all">All</button>
-                <button class="filter-btn" data-category="brand">Brand Identity</button>
-                <button class="filter-btn" data-category="print">Commercial Printing</button>
-                <button class="filter-btn" data-category="web">Web & Mobile Apps</button>
-                <button class="filter-btn" data-category="ui">UI/UX Design</button>
-                <button class="filter-btn" data-category="event">Event & Campaign Branding</button>
-                <button class="filter-btn" data-category="strategy">Creative Strategy & Consulting</button>
+           <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                @foreach($projects as $key => $category)
+                    <button class="filter-btn" data-filter="{{ $key }}">{{ $category['title'] }}</button>
+                @endforeach
             </div>
 
-            <div class="menu-container">
-                <div class="menu-grid">
-                    <!-- Menu Item 1 -->
-                    <div class="menu-item" data-category="print">
-                        <img src="assets/img/flyer1.jpg" alt="flyer" style="width:100%;border-radius:20px 10px 0 0;">
-                        <div class="item-details">
-                            <h3 class="item-title">Print Design</h3>
-                            <p class="item-description">Modern flyer design for business promotion with elegant layout and vibrant color scheme</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Menu Item 2 -->
-                    <div class="menu-item" data-category="brand">
-                        <div class="item-image">
-                            <img src="assets/img/KEYSTONE1.jpg" alt="Brand Identity">
-                        </div>
-                        <div class="item-details">
-                            <h3 class="item-title">Logo Design</h3>
-                            <p class="item-description">Distinctive brand identity created with careful attention to market positioning and core values</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Menu Item 3 -->
-                    <div class="menu-item" data-category="print">
-                        <img src="assets/img/flyer2.jpg" alt="flyer" style="width:100%;border-radius:10px 10px 0 0;">
-                        <div class="item-details">
-                            <h3 class="item-title">Marketing Brochure</h3>
-                            <p class="item-description">Professional multi-page brochure designed to showcase products with compelling visuals</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Menu Item 4 -->
-                    {{-- <div class="menu-item" data-category="web">
-                        <div class="item-image">
-                            <img src="/api/placeholder/400/250" alt="Web Development">
-                        </div>
-                        <div class="item-details">
-                            <h3 class="item-title">E-commerce Website</h3>
-                            <p class="item-description">Responsive online store built with modern frameworks and seamless checkout experience</p>
-                        </div>
-                    </div> --}}
-
-                    <div class="menu-item" data-category="brand">
-                        <div class="item-image">
-                            <img src="assets/img/KEYSTONE REALTY-02.jpg" alt="Brand Identity">
-                        </div>
-                        <div class="item-details">
-                            <h3 class="item-title">Logo Design</h3>
-                            <p class="item-description">Distinctive brand identity created with careful attention to market positioning and core values</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Menu Item 5 -->
-                    {{-- <div class="menu-item" data-category="ui">
-                        <div class="item-image">
-                            <img src="/api/placeholder/400/250" alt="UI Design">
-                        </div>
-                        <div class="item-details">
-                            <h3 class="item-title">Mobile App UI</h3>
-                            <p class="item-description">Intuitive user interface design focused on accessibility and user experience best practices</p>
-                        </div>
-                    </div> --}}
-                    
-                    <!-- Menu Item 6 -->
-                    <div class="menu-item" data-category="print">
-                        <img src="assets/img/flyer3.jpg" alt="flyer" style="width:100%;border-radius:10px 10px 0 0;">
-                        <div class="item-details">
-                            <h3 class="item-title">Product Catalog</h3>
-                            <p class="item-description">Well-organized catalog layout with professional photography and compelling descriptions</p>
-                        </div>
-                    </div>
-
-                    <div class="menu-item" data-category="event">
-                        <div class="item-image">
-                            <img src="assets/img/SELLERS SHOP PULL UPS 2.jpg" alt="Event Branding">
-                        </div>
-                        <div class="item-details">
-                            <h3 class="item-title">Conference Branding</h3>
-                            <p class="item-description">Cohesive visual identity system for industry event including signage and promotional materials</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Additional Items -->
-                    <div class="menu-item" data-category="brand">
-                        <div class="item-image">
-                            <img src="assets/img/KEYSTONE REALTY_KEYSTON 1 copy-05.jpg" alt="Brand Strategy">
-                        </div>
-                        <div class="item-details">
-                            <h3 class="item-title">Brand Guidelines</h3>
-                            <p class="item-description">Comprehensive brand identity system with detailed usage guidelines and applications</p>
-                        </div>
-                    </div>
-
-                    <div class="menu-item" data-category="event">
-                        <div class="item-image">
-                            <img src="assets/img/image.jpg" alt="Event Branding">
-                        </div>
-                        <div class="item-details">
-                            <h3 class="item-title">Conference Branding</h3>
-                            <p class="item-description">Cohesive visual identity system for industry event including signage and promotional materials</p>
-                        </div>
-                    </div>
-
-                    <div class="menu-item" data-category="brand">
-                        <div class="item-image">
-                            <img src="assets/img/KEYSTONE REALTY_KEYSTON 1.jpg" alt="Brand Identity">
-                        </div>
-                        <div class="item-details">
-                            <h3 class="item-title">Logo Design</h3>
-                            <p class="item-description">Distinctive brand identity created with careful attention to market positioning and core values</p>
-                        </div>
-                    </div>
-                    
-                    {{-- <div class="menu-item" data-category="web">
-                        <div class="item-image">
-                            <img src="/api/placeholder/400/250" alt="Web Application">
-                        </div>
-                        <div class="item-details">
-                            <h3 class="item-title">Dashboard Design</h3>
-                            <p class="item-description">Data visualization interface designed for clarity and efficient information presentation</p>
-                        </div>
-                    </div> --}}
-                    
-                    <div class="menu-item" data-category="event">
-                        <div class="item-image">
-                            <img src="assets/img/Mockup 1.png" alt="Event Branding">
-                        </div>
-                        <div class="item-details">
-                            <h3 class="item-title">Conference Branding</h3>
-                            <p class="item-description">Cohesive visual identity system for industry event including signage and promotional materials</p>
-                        </div>
-                    </div>
-
-                    <div class="menu-item" data-category="brand">
-                        <div class="item-image">
-                            <img src="assets/img/Mockup.jpg" alt="Brand Strategy">
-                        </div>
-                        <div class="item-details">
-                            <h3 class="item-title">Brand Guidelines</h3>
-                            <p class="item-description">Comprehensive brand identity system with detailed usage guidelines and applications</p>
-                        </div>
-                    </div>
-                    <div class="menu-item" data-category="brand">
-                        <div class="item-image">
-                            <img src="assets/img/image2.jpg" alt="Brand Strategy">
-                        </div>
-                        <div class="item-details">
-                            <h3 class="item-title">Brand Guidelines</h3>
-                            <p class="item-description">Comprehensive brand identity system with detailed usage guidelines and applications</p>
-                        </div>
-                    </div>
+            <div class="container">
+                <div class="projects-grid">
+                    @foreach($projects as $categoryKey => $category)
+                        @foreach($category['projects'] as $projectIndex => $project)
+                            <div class="project-card" data-category="{{ $categoryKey }}">
+                                <img src="{{ $project['img'] }}" alt="{{ $project['title'] }}">
+                                <div class="project-info">
+                                    <h3>{{ $project['title'] }}</h3>
+                                    <p>{{ $project['description'] }}</p>
+                                </div>
+                            </div>
+                            
+                            <div class="category-container" id="{{ $categoryKey }}-projects-{{ $projectIndex }}">
+                                <h2>More {{ $project['title'] }} Projects</h2>
+                                <div class="category-projects">
+                                    @foreach($project['sub_projects'] as $subProject)
+                                        <div class="sub-project">
+                                            <img src="{{ $subProject['img'] }}" alt="{{ $subProject['title'] }}">
+                                            <h3>{{ $subProject['title'] }}</h3>
+                                            <p>{{ $subProject['description'] }}</p>
+                                        </div>
+                                    @endforeach
+                                </div>
+                            </div>
+                        @endforeach
+                    @endforeach
                 </div>
             </div>
-            
-            <script>
-                // Get all filter buttons and menu items
-                const filterButtons = document.querySelectorAll('.filter-btn');
-                const menuItems = document.querySelectorAll('.menu-item');
-
-                // Add click event listener to each filter button
-                filterButtons.forEach(button => {
-                    button.addEventListener('click', () => {
-                        // Remove active class from all buttons
-                        filterButtons.forEach(btn => btn.classList.remove('active'));
-
-                        // Add active class to clicked button
-                        button.classList.add('active');
-
-                        // Get selected category
-                        const selectedCategory = button.getAttribute('data-category');
-
-                        // Filter menu items with animation
-                        menuItems.forEach(item => {
-                            const itemCategory = item.getAttribute('data-category');
-
-                            if (selectedCategory === 'all' || selectedCategory === itemCategory) {
-                                // If item should be visible
-                                if (item.classList.contains('hidden')) {
-                                    // If it was hidden before, add a small delay for a staggered effect
-                                    setTimeout(() => {
-                                        item.classList.remove('hidden');
-                                    }, 100);
-                                }
-                            } else {
-                                // If item should be hidden
-                                item.classList.add('hidden');
-                            }
-                        });
-                    });
-                });
-            </script>
         </div>
     </section>
 </main>
@@ -421,5 +211,80 @@
 <div id="back-top">
     <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
 </div>
+
+<script>
+    // Filter functionality
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+    const categoryContainers = document.querySelectorAll('.category-container');
+    
+    // Initially hide all category containers
+    categoryContainers.forEach(container => {
+        container.style.display = 'none';
+    });
+    
+    // Filter button click handling
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Remove active class from all buttons
+            filterBtns.forEach(b => b.classList.remove('active'));
+            
+            // Add active class to clicked button
+            btn.classList.add('active');
+            
+            const filter = btn.getAttribute('data-filter');
+            
+            // Hide all category containers first
+            categoryContainers.forEach(container => {
+                container.style.display = 'none';
+            });
+            
+            // Filter projects
+            projectCards.forEach(card => {
+                if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+    
+    // Project card click handling
+    projectCards.forEach(card => {
+        card.addEventListener('click', () => {
+            const category = card.getAttribute('data-category');
+            // Find the index of this card among cards with the same category
+            const categoryCards = Array.from(document.querySelectorAll(`.project-card[data-category="${category}"]`));
+            const index = categoryCards.indexOf(card);
+            
+            const relatedContainer = document.getElementById(`${category}-projects-${index}`);
+            
+            // Toggle the display of the related container
+            if (relatedContainer.style.display === 'block') {
+                relatedContainer.style.display = 'none';
+            } else {
+                // Hide all containers first
+                categoryContainers.forEach(container => {
+                    container.style.display = 'none';
+                });
+                
+                // Show the clicked category's container
+                relatedContainer.style.display = 'block';
+                
+                // Scroll to the container
+                relatedContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+    
+    // Back to top button
+    const backToTopBtn = document.querySelector('.back-to-top');
+    
+    backToTopBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
 
 @endsection

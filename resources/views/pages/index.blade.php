@@ -6,6 +6,62 @@
 
 @include('includes.header')
 
+<style>
+
+.services {
+            max-width: 1200px;
+            margin: 3rem auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 0 1rem;
+        }
+        
+        .service-card {
+            width: 100%;
+            height: 250px;
+            gap: 50px;
+            max-width: 350px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            background: #fff
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+        
+        .service-image {
+            /* height: 250px; */
+            width: 105%;
+            object-fit: cover;
+        }
+        
+        .service-label {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(12, 30, 62, 0.85);
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .service-name {
+            display: flex;
+            align-items: center;
+        }
+
+</style>
+
     <main>
         <!-- Slider Area Start-->
         <div class="slider-area slider-bg ">
@@ -56,76 +112,31 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="row services">
+                    <!-- Service Cards -->
+                    @foreach ($services as $slug => $service)
+                    <div class="service-card">
+                        <img src="{{$service['img']}}" alt="{{$service['title']}}" class="service-image">
+                        <div class="service-label">
+                            <div class="service-name">
+                                <a href="{{ route('services.show', $slug) }}"><strong>{{$service['title']}}</strong></a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
+                {{-- <div class="col-lg-4 col-md-4 col-sm-6">
                     <div class="single-cat">
                         <div class="cat-icon">
-                            <img src="assets/img/icon/services1.svg" alt="">
+                            <img src="assets/img/brand.jpg" alt="">
                         </div>
                         <div class="cat-cap">
                             <h5><a href="#">Brand Identity Design</a></h5>
                             <p>Logos, brand guidelines, brand stationery</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="single-cat">
-                        <div class="cat-icon">
-                            <img src="assets/img/icon/services2.svg" alt="">
-                        </div>
-                        <div class="cat-cap">
-                            <h5><a href="#"> Commercial Printing</a></h5>
-                            <p>Flyers, 
-                                banners, brochures, T-shirts, 
-                                publications, Packaging & Promo Materials</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="single-cat">
-                        <div class="cat-icon">
-                            <img src="assets/img/icon/services3.svg" alt="">
-                        </div>
-                        <div class="cat-cap">
-                            <h5><a href="#">Web & Mobile Applications Development</a></h5>
-                            <p> Branded websites, Mobile applications 
-                                and Software development.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="single-cat">
-                        <div class="cat-icon">
-                            <img src="assets/img/icon/services4.svg" alt="">
-                        </div>
-                        <div class="cat-cap">
-                            <h5><a href="#">UI/UX Design</a></h5>
-                            <p> Interfaces for websites, apps, and 
-                                dashboards.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="single-cat">
-                        <div class="cat-icon">
-                            <img src="assets/img/icon/services5.svg" alt="">
-                        </div>
-                        <div class="cat-cap">
-                            <h5><a href="#"> Event & Campaign Branding</a></h5>
-                            <p> Visual kits, stage backdrops, souvenir design.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="single-cat">
-                        <div class="cat-icon">
-                            <img src="assets/img/icon/services6.svg" alt="">
-                        </div>
-                        <div class="cat-cap">
-                            <h5><a href="#"> Creative Strategy & Consulting</a></h5>
-                            <p> Strategy, storytelling, positioning.</p>
-                        </div>
-                    </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>
@@ -138,7 +149,7 @@
                 <div class="col-xl-5 col-lg-5 col-md-8 col-sm-10">
                     <!-- about-img -->
                     <div class="about-img ">
-                        <img src="assets/img/Mockup.jpg" alt="" style="width: 110%;border-radius: 20px;">
+                        <img src="assets/img/Mockup.jpg" alt="" style="">
                     </div>
                 </div>
                 <div class="col-xl-7 col-lg-7 col-md-12">

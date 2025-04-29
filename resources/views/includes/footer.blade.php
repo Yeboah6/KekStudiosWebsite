@@ -1,5 +1,5 @@
 <footer>
-    <div class="footer-wrappr " style="background-color: #1C4E8F">
+    <div class="footer-wrappr " style="background-color: #0B1F3A">
         <div class="footer-area footer-padding ">
             <div class="container">
                 <div class="row d-flex justify-content-between">
@@ -23,32 +23,18 @@
                         </div>
                     </div>
                     <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1"></div>
-                    {{-- <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Company</h4>
-                                <ul>
-                                    <li><a href="#">Why choose us</a></li>
-                                    <li><a href="#"> Review</a></li>
-                                    <li><a href="#">Customers</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Carrier</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> --}}
                     <div class="col-xl-3 col-lg-2 col-md-4 col-sm-5">
                         <div class="single-footer-caption mb-50">
                             <div class="footer-tittle">
                                 <h4>Our Services</h4>
                                 <ul>
-                                    <li><a href="#">Brand Identity Design</a></li>
+                                    <li><a href="/services/brand-identity-design">Brand Identity Design</a></li>
                                     <li><a href="/services/commercial-printing">Commercial Printing</a></li>
-                                    <li><a href="#">Web Development</a></li>
-                                    <li><a href="#">Mobile App Development</a></li>
-                                    <li><a href="#">UI/UX Design</a></li>
-                                    <li><a href="#">Event & Campaign Branding</a></li>
-                                    <li><a href="#">Creative Strategy & Consulting</a></li>
+                                    <li><a href="/services/web-mobile-applications">Web & Mobile App Development</a></li>
+                                    <li><a href="/services/ui-ux-design">UI/UX Design</a></li>
+                                    <li><a href="/services/event-campaign-branding">Event & Campaign Branding</a></li>
+                                    <li><a href="/services/creative-strategy-consulting">Creative Strategy & Consulting</a></li>
+                                    <li><a href="/services/social-media-marketing">Social Media Marketing</a></li>
                                 </ul>
                             </div>
                         </div>

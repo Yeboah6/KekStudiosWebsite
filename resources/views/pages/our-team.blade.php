@@ -262,7 +262,7 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-xl-8 col-lg-9 col-md-12">
                         <div class="hero__caption hero__caption2 text-center">
-                            <h1 data-animation="fadeInLeft" data-delay=".6s">Meet Our Team</h1>
+                            <h1 data-animation="fadeInLeft" data-delay=".6s" style="color:#DAA33E;">Meet Our Team</h1>
                         </div>
                     </div>
                 </div>

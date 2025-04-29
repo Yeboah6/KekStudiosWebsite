@@ -176,7 +176,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12 text-center">
-                                    <button type="submit" class="button boxed-btn btn-lg">Submit Booking Request</button>
+                                    <button type="submit" class="btn btn-lg">Submit Booking Request</button>
                                 </div>
                             </div>
                         </form>
@@ -186,6 +186,68 @@
         </div>
     </section>
     <!-- Booking Form Section End -->
+
+    <!-- FAQ Section -->
+        <!-- ask questions -->
+        <section class="ask-questions section-bg1 section-padding30 fix">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8 col-lg-9 col-md-10 ">
+                        <!-- Section Tittle -->
+                        <div class="section-tittle text-center mb-90">
+                            <h2>Frequently Asked Questions</h2>
+                            <p>Get answers to common questions about our booking process</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="single-question d-flex mb-50">
+                            <span> Q.</span>
+                            <div class="pera">
+                                <h2>How soon will you respond to my booking request?</h2>
+                                <p> We typically respond to all booking requests within 24 hours during business days. For urgent requests, please call our office directly.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="single-question d-flex mb-50">
+                            <span> Q.</span>
+                            <div class="pera">
+                                <h2>Do I need to pay a deposit when booking?</h2>
+                                <p>Most projects require a 50% deposit to begin work, with the balance due upon completion. For smaller projects we may require full payment upfront.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="single-question d-flex mb-50">
+                            <span> Q.</span>
+                            <div class="pera">
+                                <h2> What information should I have ready before booking?</h2>
+                                <p>Having a clear project description, budget range, timeline, and any reference materials or examples will help us provide an accurate quote and timeline for your project.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="single-question d-flex mb-50">
+                            <span> Q.</span>
+                            <div class="pera">
+                                <h2>Can I change my project details after submitting?</h2>
+                                <p>Yes, you can update your project details by contacting us directly. However, significant changes after work has begun may affect the timeline and cost of your project.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12 ">
+                        <div class="more-btn text-center mt-20">
+                            <a href="/contact" class="btn">Go to Support</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End ask questions -->
 </main>
 
 @include('includes.footer')

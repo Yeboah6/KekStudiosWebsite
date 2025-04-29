@@ -8,6 +8,10 @@
     .kek-logo {
         width: 10%
     }
+
+    /* #navigation ul li a{
+        font-size:25px;
+    } */
 }
 
 </style>

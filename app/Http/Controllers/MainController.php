@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\CustomerMessage;
 use App\Models\Booking;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class MainController extends Controller
 {
@@ -12,7 +14,7 @@ class MainController extends Controller
         'brand-identity-design' => [
             'title' => 'Brand Identity Design',
             'slug' => 'brand-identity-design',
-            'img' => 'assets/img/icon/price1.svg',
+            'img' => 'assets/img/brand.jpg',
             'works' => [
                 'Logos',
                 'Brand guidelines',
@@ -22,7 +24,7 @@ class MainController extends Controller
         'commercial-printing' => [
             'title' => 'Commercial Printing',
             'slug' => 'commercial-printing',
-            'img' => 'assets/img/icon/price2.svg',
+            'img' => 'assets/img/commercial.jpg',
             'works' => [
                 'Flyers & Banners',
                 'Brochures',
@@ -34,7 +36,7 @@ class MainController extends Controller
         'web-mobile-applications' => [
             'title' => 'Web & Mobile Applications Development',
             'slug' => 'web-mobile-applications',
-            'img' => 'assets/img/icon/price3.svg',
+            'img' => 'assets/img/Mockup2.jpg',
             'works' => [
                 'Branded websites',
                 'Mobile applications',
@@ -54,7 +56,7 @@ class MainController extends Controller
         'event-campaign-branding' => [
             'title' => 'Event & Campaign Branding',
             'slug' => 'event-campaign-branding',
-            'img' => 'assets/img/icon/price2.svg',
+            'img' => 'assets/img/image8.jpg',
             'works' => [
                 'Visual kits',
                 'Stage backdrops',
@@ -64,17 +66,95 @@ class MainController extends Controller
         'creative-strategy-consulting' => [
             'title' => 'Creative Strategy & Consulting',
             'slug' => 'creative-strategy-consulting',
-            'img' => 'assets/img/icon/price3.svg',
+            'img' => 'assets/img/Stationary.jpg',
             'works' => [
                 'Strategy',
                 'Storytelling',
                 'Positioning'
             ]
+        ],
+            'social-media-marketing' => [
+                'title' => 'Social Media Marketing',
+                'slug' => 'social-media-marketing',
+                'img' => 'assets/img/social.jpg',
+                'works' => [
+                    'Strategy',
+                    'Storytelling',
+                    'Positioning'
+                ]
+            ]
+    ];
+
+    protected $clients = [
+        [
+            'logo' => 'assets/img/OUR CLIENTS/20728.png'
+        ],
+        [
+            'logo' => 'assets/img/OUR CLIENTS/BGF.png'
+        ],
+        [
+            'logo' => 'assets/img/OUR CLIENTS/Christell.png'
+        ],
+        [
+            'logo' => 'assets/img/OUR CLIENTS/Elle.png'
+        ],
+        [
+            'logo' => 'assets/img/OUR CLIENTS/GAF logo.png'
+        ],
+        [
+            'logo' => 'assets/img/OUR CLIENTS/GF BUSINESS.png'
+        ],
+        [
+            'logo' => 'assets/img/OUR CLIENTS/Glarft.png'
+        ],
+        [
+            'logo' => 'assets/img/OUR CLIENTS/hth.png'
+        ],
+        [
+            'logo' => 'assets/img/OUR CLIENTS/Inovtech.png'
+        ],
+        [
+            'logo' => 'assets/img/OUR CLIENTS/Layer 0.png'
+        ],
+        [
+            'logo' => 'assets/img/OUR CLIENTS/Layer 1.png'
+        ],
+        [
+            'logo' => 'assets/img/OUR CLIENTS/Layer 5.png'
+        ],
+        [
+            'logo' => 'assets/img/OUR CLIENTS/Layer 8.png'
+        ],
+        [
+            'logo' => 'assets/img/OUR CLIENTS/Layer 9.png'
+        ],
+        [
+            'logo' => 'assets/img/OUR CLIENTS/Layer 10.png'
+        ],
+        [
+            'logo' => 'assets/img/OUR CLIENTS/Layer 11.png'
+        ],
+        [
+            'logo' => 'assets/img/OUR CLIENTS/Layer 12.png'
+        ],
+        [
+            'logo' => 'assets/img/OUR CLIENTS/Layer 13.png'
+        ],
+        [
+            'logo' => 'assets/img/OUR CLIENTS/Makoine.png'
+        ],
+        [
+            'logo' => 'assets/img/OUR CLIENTS/Priceless Packages.png'
+        ],
+        [
+            'logo' => 'assets/img/OUR CLIENTS/sol.png'
         ]
     ];
 
     public function home() {
-        return view('pages.index');
+        return view('pages.index', [
+            'services' => $this->services
+        ]);
     }
 
     public function contact() {
@@ -83,17 +163,13 @@ class MainController extends Controller
 
     public function services() {
         return view('pages.services', [
-            'services' => $this->services
+            'services' => $this->services,
+            'clients' => $this -> clients
         ]);
-        // return view('pages.services');
     }
 
     public function about() {
         return view('pages.about');
-    }
-
-    public function portfolio() {
-        return view('pages.portfolio');
     }
 
     public function team() {
@@ -184,5 +260,21 @@ class MainController extends Controller
         return view('pages.confirmation', [
             'service' => session('service')
         ]);
+    }
+
+    public function sendMessage(Request $request) {
+        $validated = $request -> validate([
+            'message' => 'required|string',
+            'email' => 'required|string|email',
+            'name' => 'required|string',
+            'subject' => 'required|string'
+        ]);
+
+        try {
+            Mail::to($validated['email']) -> send(new CustomerMessage($validated));
+            return response() -> json(['success' => true, 'message' => 'Message sent successfully!']);
+        } catch (\Exception $e) {
+            return response() -> json(['success' => false, 'message' => 'Failed to send message. Please try again.']);
+        }
     }
 }
