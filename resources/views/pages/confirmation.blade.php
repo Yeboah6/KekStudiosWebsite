@@ -92,12 +92,18 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="text-center">
-                            <a href="{{ route('services.show', ['service' => $service['slug']]) }}">{{ $service['title'] }}</a>
+                            <a href="{{ route('services.show') }}">{{ $service->title }}</a>
                             {{-- <a href="{{ route('services.show') }}" class="button boxed-btn">Browse More Services</a> --}}
                             <a href="{{ route('home') }}" class="button boxed-btn btn-outline ml-3">Return to Homepage</a>
                         </div>
+                        
+                        {{-- <div class="text-center">
+                            <a href="{{ route('services.show', ['service' => $service['slug']]) }}">{{ $service['title'] }}</a>
+                            <a href="{{ route('services.show') }}" class="button boxed-btn">Browse More Services</a>
+                            <a href="{{ route('home') }}" class="button boxed-btn btn-outline ml-3">Return to Homepage</a>
+                        </div> --}}
                     </div>
                 </div>
             </div>

@@ -65,7 +65,7 @@
                         <div class="col-xl-12">
                             <div class="footer-copy-right text-center">
                                 <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> | KEKStudios
+                                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> | KEKStudios Official
                                   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 
                               </div>

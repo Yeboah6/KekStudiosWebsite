@@ -126,24 +126,6 @@ class PortfolioController extends Controller
             'title' => 'Commercial Printing',
             'projects' => [
                 [
-                    'title' => 'Marketing Collateral',
-                    'description' => '',
-                    'img' => 'assets/img/flyer2.jpg',
-                    'sub_projects' => []
-                ],
-                [
-                    'title' => 'Marketing Collateral',
-                    'description' => '',
-                    'img' => 'assets/img/flyer3.jpg',
-                    'sub_projects' => []
-                ],
-                [
-                    'title' => 'Marketing Collateral',
-                    'description' => '',
-                    'img' => 'assets/img/commercial.jpg',
-                    'sub_projects' => []
-                ],
-                [
                     'title' => 'T-Shirt Printing',
                     'description' => '',
                     'img' => 'assets/img/COMMERCIAL/HustleBean.jpg',
@@ -194,6 +176,24 @@ class PortfolioController extends Controller
                             'img' => 'assets/img/COMMERCIAL/WHITE.jpg'
                         ]
                     ]
+                ],
+                [
+                    'title' => 'Marketing Collateral',
+                    'description' => '',
+                    'img' => 'assets/img/flyer2.jpg',
+                    'sub_projects' => []
+                ],
+                [
+                    'title' => 'Marketing Collateral',
+                    'description' => '',
+                    'img' => 'assets/img/flyer3.jpg',
+                    'sub_projects' => []
+                ],
+                [
+                    'title' => 'Marketing Collateral',
+                    'description' => '',
+                    'img' => 'assets/img/commercial.jpg',
+                    'sub_projects' => []
                 ]
             ]
         ],
@@ -201,25 +201,25 @@ class PortfolioController extends Controller
             'title' => 'Web & Mobile Apps',
             'projects' => [
                 [
-                    'title' => 'E-Commerce Website Redesign',
+                    'title' => 'E-Commerce Website Design',
                     'description' => '',
                     'img' => 'assets/img/Mockup2.jpg',
                     'sub_projects' => [
-                        [
-                            'title' => 'Keystone Mobile App',
-                            'description' => 'Property management app with interactive features',
-                            'img' => '/api/placeholder/400/320'
-                        ],
-                        [
-                            'title' => 'Corporate Website',
-                            'description' => 'Responsive design with content management system',
-                            'img' => '/api/placeholder/400/320'
-                        ],
-                        [
-                            'title' => 'E-commerce Platform',
-                            'description' => 'Custom shopping experience with inventory management',
-                            'img' => '/api/placeholder/400/320'
-                        ]
+                        // [
+                        //     'title' => 'Keystone Mobile App',
+                        //     'description' => 'Property management app with interactive features',
+                        //     'img' => '/api/placeholder/400/320'
+                        // ],
+                        // [
+                        //     'title' => 'Corporate Website',
+                        //     'description' => 'Responsive design with content management system',
+                        //     'img' => '/api/placeholder/400/320'
+                        // ],
+                        // [
+                        //     'title' => 'E-commerce Platform',
+                        //     'description' => 'Custom shopping experience with inventory management',
+                        //     'img' => '/api/placeholder/400/320'
+                        // ]
                     ]
                 ]
             ]
@@ -228,25 +228,25 @@ class PortfolioController extends Controller
             'title' => 'UI/UX Design',
             'projects' => [
                 [
-                    'title' => 'Financial App UI/UX',
+                    'title' => 'UI / UX Design',
                     'description' => '',
-                    'img' => '/api/placeholder/400/320',
+                    'img' => 'assets/img/Logistics.png',
                     'sub_projects' => [
                         [
-                            'title' => 'User Flow Diagrams',
+                            'title' => '',
                             'description' => '',
-                            'img' => '/api/placeholder/400/320'
+                            'img' => 'assets/img/Mac Studio.png'
                         ],
-                        [
-                            'title' => 'Wireframe Prototypes',
-                            'description' => '',
-                            'img' => '/api/placeholder/400/320'
-                        ],
-                        [
-                            'title' => 'Design System',
-                            'description' => '',
-                            'img' => '/api/placeholder/400/320'
-                        ]
+                        // [
+                        //     'title' => 'Wireframe Prototypes',
+                        //     'description' => '',
+                        //     'img' => '/api/placeholder/400/320'
+                        // ],
+                        // [
+                        //     'title' => 'Design System',
+                        //     'description' => '',
+                        //     'img' => '/api/placeholder/400/320'
+                        // ]
                     ]
                 ]
             ]
@@ -255,7 +255,7 @@ class PortfolioController extends Controller
             'title' => 'Event & Campaign Branding',
             'projects' => [
                 [
-                    'title' => 'The SELLERS SHOP Company Logos',
+                    'title' => 'The SELLERS SHOP Company',
                     'description' => '',
                     'img' => 'assets/img/THESELLERSSHOP/SELLERS SHOP PULL UPS 2.jpg',
                     'sub_projects' => [
@@ -282,7 +282,7 @@ class PortfolioController extends Controller
                     ]
                 ],
                 [
-                    'title' => 'Priceless Packages Logos',
+                    'title' => 'Priceless Packages',
                     'description' => '',
                     'img' => 'assets/img/Mockup 1.png',
                     'sub_projects' => [
@@ -309,25 +309,25 @@ class PortfolioController extends Controller
             'title' => 'Creative Strategy & Consulting',
             'projects' => [
                 [
-                    'title' => 'Construction Company Logos',
+                    'title' => 'Construction Company',
                     'description' => '',
                     'img' => 'assets/img/Stationary.jpg',
                     'sub_projects' => [
-                        [
-                            'title' => '',
-                            'description' => '',
-                            'img' => '/api/placeholder/400/320'
-                        ],
-                        [
-                            'title' => 'White Hard Hat Engineering',
-                            'description' => 'Clean, minimalist logo for engineering firm',
-                            'img' => '/api/placeholder/400/320'
-                        ],
-                        [
-                            'title' => 'Keystone Realty',
-                            'description' => 'Property development company logo with gold accents',
-                            'img' => '/api/placeholder/400/320'
-                        ]
+                        // [
+                        //     'title' => '',
+                        //     'description' => '',
+                        //     'img' => '/api/placeholder/400/320'
+                        // ],
+                        // [
+                        //     'title' => 'White Hard Hat Engineering',
+                        //     'description' => 'Clean, minimalist logo for engineering firm',
+                        //     'img' => '/api/placeholder/400/320'
+                        // ],
+                        // [
+                        //     'title' => 'Keystone Realty',
+                        //     'description' => 'Property development company logo with gold accents',
+                        //     'img' => '/api/placeholder/400/320'
+                        // ]
                     ]
                 ]
             ]

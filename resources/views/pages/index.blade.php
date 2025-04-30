@@ -8,7 +8,7 @@
 
 <style>
 
-.services {
+        .services {
             max-width: 1200px;
             margin: 3rem auto;
             display: flex;
@@ -60,6 +60,13 @@
             align-items: center;
         }
 
+        @media (max-width: 550px) {
+        .service-card {
+            width: 120%;
+            height: 250px;
+        }
+    }
+
 </style>
 
     <main>
@@ -79,10 +86,6 @@
                                         to empower businesses and organizations through 
                                         creativity, innovation, and purpose-driven design.</p>
                                     <!-- Slider btn -->
-                                    <div class="slider-btns">
-                                        <!-- Hero-btn -->
-                                        {{-- <a data-animation="fadeInLeft" data-delay="1s" href="industries.html" class="btn radius-btn">get started</a> --}}
-                                    </div>
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-6">
@@ -126,17 +129,6 @@
                     </div>
                     @endforeach
                 </div>
-                {{-- <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="single-cat">
-                        <div class="cat-icon">
-                            <img src="assets/img/brand.jpg" alt="">
-                        </div>
-                        <div class="cat-cap">
-                            <h5><a href="#">Brand Identity Design</a></h5>
-                            <p>Logos, brand guidelines, brand stationery</p>
-                        </div>
-                    </div>
-                </div> --}}
             </div>
         </div>
     </section>

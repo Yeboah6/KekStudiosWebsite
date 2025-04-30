@@ -4,7 +4,71 @@
 
 @section('content')
 
-@include('includes.header')
+<style>
+
+.kek-logo {
+    width: 30%
+}
+
+@media (max-width: 768px) {
+    .case-study-content {
+        grid-template-columns: 1fr;
+    }
+
+    .kek-logo {
+        width: 10%
+    }
+}
+
+@media (max-width: 550px) {
+    .kek-logo {
+        width: 10%
+    }
+
+}
+
+</style>
+
+<header>
+    <!-- Header Start -->
+    <div class="header-area header-transparent" style="background: #0B1F3A">
+        <div class="main-header">
+            <div class="header-bottom  header-sticky">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <!-- Logo -->
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="logo">
+                                <a href="/"><img class="kek-logo" src="../assets/img/loader1.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10">
+                            <div class="menu-wrapper d-flex align-items-center justify-content-end">
+                                <!-- Main-menu -->
+                                <div class="main-menu d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a href="/">Home</a></li>
+                                            <li><a href="/about-us">About Us</a></li>
+                                            <li><a href="/services">Services</a></li>
+                                            <li><a href="/portfolio">Portfolio</a></li>
+                                            <li><a href="/contact">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div> 
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+</header>
 
 <main>
     <!-- Slider Area Start-->
@@ -14,7 +78,7 @@
             <div class="container">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-xl-8 col-lg-9 col-md-12">
-                        <div class="hero__caption hero__caption3 text-center">
+                        <div class="hero__caption hero__caption3 text-center book">
                             <h1 data-animation="fadeInLeft" data-delay=".6s" style="color: #DAA33E">Book {{ $service["title"] }}</h1>
                             <p data-animation="fadeInLeft" data-delay=".8s">Let's bring your vision to life</p>
                         </div>
@@ -35,7 +99,9 @@
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="booking-form-wrapper">
-                        <button onclick="history.back()" class="button boxed-btn btn-lg">Back</button>
+                        <a href="{{ url('/services') }}" class="button boxed-btn btn-lg">Back</a>
+                        <br/>
+                        <br/>
                         <div class="section-title text-center mb-5">
                             <h2>Schedule Your {{ $service["title"] }} Project</h2>
                             <p>Fill out the form below to get started with your project. Our team will contact you within 24 hours.</p>
@@ -176,7 +242,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12 text-center">
-                                    <button type="submit" class="btn btn-lg">Submit Booking Request</button>
+                                    <button type="submit" class="button boxed-btn btn-lg" style="border-radius: 30px;">Submit Booking Request</button>
                                 </div>
                             </div>
                         </form>
@@ -315,6 +381,12 @@
         
         .section-padding {
             padding: 50px 0;
+        }
+    }
+
+    @media (max-width: 550px) {
+        .book {
+            margin-top: 150px;
         }
     }
 </style>

@@ -278,13 +278,13 @@
     <!--? Team Section Start -->
     <section class="board-section">
         <div class="container">
-            <h2 class="board-title">Board of Directors</h2>
+            <h2 class="board-title">Our Teams</h2>
             <div class="title-underline"></div>
             
             <div class="directors-grid">
                 <div class="director-card">
                     <div class="director-image-container">
-                        <img src="assets/img/TJE-4.png" alt="Board Chairman" class="director-image">
+                        <img src="assets/img/teams/TJE-4.png" alt="Board Chairman" class="director-image">
                         <div class="director-details">
                             <div class="social">
                                 <a href="tel:+233 55 696 305"><i class="ti-tablet"></i></a>
@@ -297,13 +297,23 @@
                     </div>
                     <div class="director-info">
                         <h3 class="director-name">Emmanuel Kofi Ketsi</h3>
-                        <p class="director-position">Founder & CEO</p>
+                        <p class="director-position">Lead Creative & CEO</p>
                     </div>
                 </div>
                 
                 <div class="director-card">
                     <div class="director-image-container">
-                        <img src="assets/img/TJE-4.png" alt="CEO & Founder" class="director-image">
+                        <img src="assets/img/teams/micheal.jpg" alt="CEO & Founder" class="director-image">
+                    </div>
+                    <div class="director-info">
+                        <h3 class="director-name">Micheal Mensah</h3>
+                        <p class="director-position">Product Designer / Product Manager</p>
+                    </div>
+                </div>
+
+                {{-- <div class="director-card">
+                    <div class="director-image-container">
+                        <img src="assets/img/teams/TJE-4.png" alt="CEO & Founder" class="director-image">
                         <div class="director-details">
                             <div class="social">
                                 <a href="tel:+233 55 696 305"><i class="ti-tablet"></i></a>
@@ -318,9 +328,9 @@
                         <h3 class="director-name">Christian Boakye Yiadome</h3>
                         <p class="director-position">CEO & Founder</p>
                     </div>
-                </div>
+                </div> --}}
 
-                <div class="director-card">
+                {{-- <div class="director-card">
                     <div class="director-image-container">
                         <img src="assets/img/TJE-4.png" alt="CEO & Founder" class="director-image">
                         <div class="director-details">
@@ -337,26 +347,7 @@
                         <h3 class="director-name">Christian Boakye Yiadome</h3>
                         <p class="director-position">CEO & Founder</p>
                     </div>
-                </div>
-
-                <div class="director-card">
-                    <div class="director-image-container">
-                        <img src="assets/img/TJE-4.png" alt="CEO & Founder" class="director-image">
-                        <div class="director-details">
-                            <div class="social">
-                                <a href="tel:+233 55 696 305"><i class="ti-tablet"></i></a>
-                                <a href="https://www.linkedin.com/in/emmanuel-kofi-ketsi/"><i class="fab fa-linkedin"></i></a>
-                                <a href="https://www.behance.net/kekstudiosofficial"><i class="fab fa-behance"></i></a>
-                                <a href="https://www.instagram.com/kekstudios_official?igsh=azBuejV0YnplMnVs"><i class="fab fa-instagram"></i></a>
-                                <a href="mailto:kekstudiosofficial1@gmail.com"><i class="ti-email"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="director-info">
-                        <h3 class="director-name">Christian Boakye Yiadome</h3>
-                        <p class="director-position">CEO & Founder</p>
-                    </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>

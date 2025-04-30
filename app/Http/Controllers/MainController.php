@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Mail\CustomerMessage;
+use App\Mail\BookingMail;
 use App\Models\Booking;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -46,7 +47,7 @@ class MainController extends Controller
         'ui-ux-design' => [
             'title' => 'UI/UX Design',
             'slug' => 'ui-ux-design',
-            'img' => 'assets/img/icon/price1.svg',
+            'img' => 'assets/img/Logistics.png',
             'works' => [
                 'Apps Interfaces',
                 'Websites Interfaces',
@@ -236,18 +237,22 @@ class MainController extends Controller
             'terms' => $validated['terms']
         ]);
 
-        $booking -> save();
-        return redirect()->route('booking.confirmation')->with([
-            'success' => 'Your booking request has been submitted successfully!',
-            'service' => $this->services[$service]['title'],
-            'booking' => [
-                'service_title' => $this->services[$service]['title'],
-                'project_title' => $request->project_title,
-                'name' => $request->name,
-                'email' => $request->email,
-                'phone' => $request->phone
-            ]
-        ]);
+        $saveProject = $booking -> save();
+        if ($saveProject) {
+            Mail::to('kekstudiosofficial@gmail.com') -> send(new BookingMail($booking));
+        }
+        return redirect() -> back();
+        // return redirect()->route('booking.confirmation')->with([
+        //     'success' => 'Your booking request has been submitted successfully!',
+        //     'service' => $this->services[$service]['title'],
+        //     'booking' => [
+        //         'service_title' => $this->services[$service]['title'],
+        //         'project_title' => $request->project_title,
+        //         'name' => $request->name,
+        //         'email' => $request->email,
+        //         'phone' => $request->phone
+        //     ]
+        // ]);
     }
 
     public function confirmation()
@@ -270,11 +275,7 @@ class MainController extends Controller
             'subject' => 'required|string'
         ]);
 
-        try {
-            Mail::to($validated['email']) -> send(new CustomerMessage($validated));
-            return response() -> json(['success' => true, 'message' => 'Message sent successfully!']);
-        } catch (\Exception $e) {
-            return response() -> json(['success' => false, 'message' => 'Failed to send message. Please try again.']);
-        }
+        Mail::to('kekstudiosofficial@gmail.com') -> send(new CustomerMessage($validated));
+        return redirect() -> back();
     }
 }

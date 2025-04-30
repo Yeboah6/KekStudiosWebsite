@@ -122,16 +122,12 @@
 
     @media (max-width:550px) {
         .sub-project img {
-            height: 250px;
+            height: 350px;
         }
 
         .project-card img {
             height: 400px;
         }
-
-        .sub-project img {
-        height: 150px;
-    }
     }
 </style>
 

@@ -32,7 +32,7 @@ class CustomerMessage extends Mailable
     {
         return new Envelope(
             subject: 'New Email From Customer',
-            from: new Address('yeboahs324@gmail.com', "KEKStudios Official")
+            from: new Address('kekstudiosofficial@gmail.com', "KEKStudios Official")
         );
     }
 

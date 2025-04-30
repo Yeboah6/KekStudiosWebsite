@@ -4,14 +4,21 @@
     width: 30%
 }
 
+@media (max-width: 768px) {
+    .case-study-content {
+        grid-template-columns: 1fr;
+    }
+
+    .kek-logo {
+        width: 10%
+    }
+}
+
 @media (max-width: 550px) {
     .kek-logo {
         width: 10%
     }
 
-    /* #navigation ul li a{
-        font-size:25px;
-    } */
 }
 
 </style>

@@ -221,14 +221,6 @@
             align-items: center;
         }
         
-        /* .service-icon {
-            height: 20px;
-            width: 20px;
-            background-color: #d4af37;
-            margin-right: 8px;
-            display: inline-block;
-        } */
-        
         .arrow {
             font-size: 1.5rem;
         }

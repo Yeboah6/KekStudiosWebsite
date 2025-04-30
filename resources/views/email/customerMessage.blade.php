@@ -36,7 +36,7 @@
         }
         /* Header */
         .email-header {
-            background: linear-gradient(135deg, #43a047 0%, #2e7d32 100%);
+            background: #0B1F3A;
             color: #ffffff;
             padding: 25px 30px;
         }
@@ -86,7 +86,7 @@
         }
         .email-body .message-box {
             background-color: #f9f9f9;
-            border-left: 4px solid #43a047;
+            border-left: 4px solid #0B1F3A;
             padding: 15px;
             margin: 20px 0;
             border-radius: 0 4px 4px 0;
@@ -131,7 +131,7 @@
             text-align: center;
         }
         .email-footer a {
-            color: #43a047;
+            color: #DAA33E;
             text-decoration: none;
             font-weight: 500;
         }
@@ -147,7 +147,7 @@
             margin: 0 8px;
             width: 30px;
             height: 30px;
-            background-color: #43a047;
+            background-color: #DAA33E;
             border-radius: 50%;
             text-align: center;
             line-height: 30px;
@@ -167,11 +167,11 @@
                 <h1>Customer Message</h1>
             </td>
         </tr>
-        <tr>
+        {{-- <tr>
             <td class="logo-area">
                 <img src="/api/placeholder/180/60" alt="KEKStudios Official" class="logo" />
             </td>
-        </tr>
+        </tr> --}}
         <tr>
             <td class="email-body">
                 <h2>New Customer Inquiry</h2>
@@ -203,7 +203,7 @@
         <tr>
             <td class="email-footer">
                 <p>&copy; {{ config('app.name') }} {{ date('Y') }}. All rights reserved.</p>
-                <p>Makoine Foods and Farms LTD</p>
+                <p>KEKStudios Official</p>
                 <p>
                     <a href="mailto:kekstudiosofficial1@gmail.com">kekstudiosofficial1@gmail.com</a> | 
                     <a href="tel:+233 55 369 6305">+233 55 369 6305</a>
