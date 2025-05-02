@@ -66,11 +66,76 @@
             height: 250px;
         }
     }
+    .image-carousel {
+        position: relative;
+        width: 100%;
+    }
+    
+    .owl-dots {
+        position: absolute;
+        bottom: -30px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .owl-dots .owl-dot {
+        display: inline-block;
+        margin: 0 5px;
+    }
+    
+    .owl-dots .owl-dot span {
+        display: block;
+        width: 10px;
+        height: 10px;
+        background: rgba(255,255,255,0.5);
+        border-radius: 50%;
+    }
+    
+    .owl-dots .owl-dot.active span {
+        background: #fff;
+    }
 
 </style>
 
     <main>
-        <!-- Slider Area Start-->
+        
+<!-- Slider Area Start-->
+<div class="slider-area slider-bg">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-xl-5 col-lg-5 col-md-9">
+                <div class="hero__caption hero__caption3">
+                    <span data-animation="fadeInLeft" data-delay=".3s">Reality Of Imagination </span>
+                    <h1 data-animation="fadeInLeft" data-delay=".6s" style="font-weight: 800">Who We Are</h1>
+                    <p data-animation="fadeInLeft" data-delay=".8s">At KEKStudios Creative Hub, we are more than just a 
+                        design agency—we are brand builders with a mission 
+                        to empower businesses and organizations through 
+                        creativity, innovation, and purpose-driven design.</p>
+                    <!-- Slider btn -->
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+                <div class="hero__img d-none d-lg-block f-right">
+                    <!-- Image carousel -->
+                    <div class="image-carousel">
+                        <div class="carousel-images owl-carousel">
+                            <img src="assets/img/background.png" alt="KEKStudios brand identity design process" style="width: 115%">
+                            <img src="assets/img/image4.jpg" alt="KEKStudios creative work" style="width: 115%">
+                            <img src="assets/img/image3.jpg" alt="KEKStudios portfolio" style="width: 115%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Slider Shape -->
+    {{-- <div class="slider-shape d-none d-lg-block">
+        <img class="slider-shape1" src="assets/img/hero/top-left-shape.png" alt="">
+    </div> --}}
+</div>
+<!-- Slider Area End -->
+        {{-- <!-- Slider Area Start-->
         <div class="slider-area slider-bg ">
             <div class="slider-active">
                 <!-- Single Slider -->
@@ -78,7 +143,7 @@
                     <div class="container">
                         <div class="row align-items-center justify-content-between">
                             <div class="col-xl-5 col-lg-5 col-md-9 ">
-                                <div class="hero__caption">
+                                <div class="hero__caption hero__caption3">
                                     <span data-animation="fadeInLeft" data-delay=".3s">Reality Of Imagination </span>
                                     <h1 data-animation="fadeInLeft" data-delay=".6s " style="font-weight: 800">Who We Are</h1>
                                     <p data-animation="fadeInLeft" data-delay=".8s">At KEKStudios Creative Hub, we are more than just a 
@@ -90,7 +155,7 @@
                             </div>
                             <div class="col-xl-6 col-lg-6">
                                 <div class="hero__img d-none d-lg-block f-right">
-                                    <img src="assets/img/background.png" alt="" data-animation="fadeInRight" data-delay="1s" style="width: 115%">
+                                    <img src="assets/img/background.png" alt="KEKStudios brand identity design process" data-animation="fadeInRight" data-delay="1s" style="width: 115%">
                                 </div>
                             </div>
                         </div>
@@ -103,7 +168,7 @@
                 <img class="slider-shape1" src="assets/img/hero/top-left-shape.png" alt="">
             </div>
         </div>
-        <!-- Slider Area End -->
+        <!-- Slider Area End --> --}}
     <!--? Team -->
     <section class="team-area section-padding40 section-bg1">
         <div class="container">
@@ -118,15 +183,16 @@
                 <div class="row services">
                     <!-- Service Cards -->
                     @foreach ($services as $slug => $service)
-                    <div class="service-card">
-                        <img src="{{$service['img']}}" alt="{{$service['title']}}" class="service-image">
-                        <div class="service-label">
-                            <div class="service-name">
-                                <a href="{{ route('services.show', $slug) }}"><strong>{{$service['title']}}</strong></a>
+                    <a href="{{ route('services.show', $slug) }}" class="service-card-link">
+                        <div class="service-card">
+                            <img src="{{$service['img']}}" alt="{{$service['title']}}" class="service-image" loading="lazy">
+                            <div class="service-label">
+                                <div class="service-name">
+                                    <strong>{{$service['title']}}</strong>
+                                </div>
                             </div>
-                            
                         </div>
-                    </div>
+                    </a>
                     @endforeach
                 </div>
             </div>
@@ -145,35 +211,30 @@
                     </div>
                 </div>
                 <div class="col-xl-7 col-lg-7 col-md-12">
-                    <div class="about-caption ">
+                    <div class="about-caption about-area1   ">
                         <!-- Section Tittle -->
                         <div class="section-tittle section-tittle2 mb-30">
                             <h2 style="font-weight: bold">WHY CHOOSE US</h2>
                         </div>
                         <ul>
                             <li>
-                                {{-- <img src="assets/img/icon/right.svg" alt=""> --}}
                                 <h3>Fast Turnaround</h3>
                                 <p> 24-hour service with reliable, on-time delivery.</p>
                             </li>
                             
                             <li>
-                                {{-- <img src="assets/img/icon/right.svg" alt=""> --}}
                                 <h3 style="margin-bottom: 10px;">Dual-Service Model</h3>
                                 <p>Digital design + high-quality printing under one roof.</p>
                             </li>
                             <li>
-                                {{-- <img src="assets/img/icon/right.svg" alt=""> --}}
                                 <h3 style="margin-bottom: 10px;"> Creative & Original</h3>
                                 <p>Unique solutions tailored to each client.</p>
                             </li>
                             <li>
-                                {{-- <img src="assets/img/icon/right.svg" alt=""> --}}
                                 <h3 style="margin-bottom: 10px;">6+ Years Experience</h3>
                                 <p>Trusted by brands across industries.</p>
                             </li>
                             <li>
-                                {{-- <img src="assets/img/icon/right.svg" alt=""> --}}
                                 <h3 style="margin-bottom: 10px;">Scalable & Impactful</h3>
                                 <p>Built to grow with clients and empower creatives.</p>
                             </li>
@@ -194,7 +255,7 @@
                         <!-- Testimonial Start -->
                         <div class="h1-testimonial-active">
                             <!-- Single Testimonial -->
-                            <div class="single-testimonial text-center mt-55">
+                            {{-- <div class="single-testimonial text-center mt-55">
                                 <div class="testimonial-caption">
                                     <img src="assets/img/icon/quotes-sign.png" alt="" class="quotes-sign">
                                     <p>
@@ -213,7 +274,7 @@
                                         <p>Founder & CEO , CalledOutSupport</p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                             <!-- Single Testimonial -->
                             <div class="single-testimonial text-center mt-55">
                                 <div class="testimonial-caption">
@@ -228,7 +289,6 @@
                                 <!-- founder -->
                                 <div class="testimonial-founder d-flex align-items-center justify-content-center">
                                     <div class="founder-img">
-                                        {{-- <img src="assets/img/icon/testimonial.png" alt=""> --}}
                                     </div>
                                     <div class="founder-text">
                                         <span>Jacson Miller</span>
@@ -247,5 +307,25 @@
 </main>
 
 @include('includes.footer')
+
+<!-- Add this script at the end of your body tag to initialize the carousel -->
+<script>
+    $(document).ready(function(){
+        $('.carousel-images').owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 0,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: false,
+            nav: false,
+            dots: true,
+            animateOut: 'fadeOut',
+            animateIn: 'fadeIn'
+        });
+    });
+</script>
+
+
 
 @endsection

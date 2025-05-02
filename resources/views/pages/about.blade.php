@@ -147,7 +147,7 @@
     .separator {
         width: 100%;
         height: 2px;
-        background-color: #F4A300;
+        background-color: #DAA33E;
         margin: 20px 0;
     }
     
@@ -200,7 +200,7 @@
     .vm-icon {
         width: 80px;
         height: 80px;
-        background-color: #F4A300;
+        background-color: #DAA33E;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -263,7 +263,7 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 15px;
-        color: #F4A300;
+        color: #DAA33E;
         font-size: 24px;
     }
     
@@ -484,7 +484,7 @@
         
         .journey-title-block,
         .value-card h4 {
-            font-size: 3rem;
+            font-size: 2.5rem;
         }
         
         .view-team-btn {
@@ -514,8 +514,8 @@
     
     @media screen and (max-width: 550px) {
         .value-content {
-        font-size: 2.5rem;
-    }
+            font-size: 1.8rem;
+        }
         .about-section,
         .journey-section,
         .team-section,
@@ -532,16 +532,16 @@
         .team-title,
         .vmcv-title,
         .values-title {
-            font-size: 3.3rem;
+            font-size: 3rem;
         }
         
         .vm-card h3 {
-            font-size: 3rem;
+            font-size: 2.5rem;
         }
 
         .journey-title-block
          {
-            font-size: 2.6rem;
+            font-size: 2.5rem;
         }
         
         .year-circle,
@@ -572,16 +572,16 @@
         }
         
         .vmcv-subtitle {
-            font-size: 2.3rem;
+            font-size: 1.8rem;
             margin-bottom: 30px;
         }
 
         .vm-content p{
-        font-size: 2.5rem;
+        font-size: 1.8rem;
         }
 
         .journey-text {
-            font-size: 2.5rem;
+            font-size: 1.8rem;
             line-height: 1.8;
         }
 
@@ -590,7 +590,7 @@
         }
 
         .about-caption ul li {
-            font-size: 2.5rem;
+            font-size: 1.8rem;
         }
 
         .about-caption ul li img {
@@ -598,7 +598,7 @@
         }
 
         .about-content p {
-            font-size: 2.5rem;
+            font-size: 1.8rem;
         }
 
         .year-circle {
@@ -608,9 +608,15 @@
         }
 
         .team-description {
-            font-size: 2.5rem
+            font-size: 1.6rem
         }
     }
+
+    /* @media (max-width: 400px) {
+        .about-content p {
+            font-size: 1rem;
+        }
+    } */
 </style>
 <main>
     <!-- Slider Area Start-->
@@ -847,13 +853,13 @@
         <div class="team-header">
             <div class="team-title-container">
                 {{-- <h4 class="team-subtitle">CHEFS FOR PASSION</h4> --}}
-                <h2 class="team-title">Meet Our Team</h2>
+                <h2 class="team-title">Meet Our CEO</h2>
             </div>
             <div>
                 <p class="team-description">
                     A master in the art of several rare cuisines, Chefs will surprise you with their touch to the simplest.
                 </p>
-                <a href="/our-team" class="view-team-btn">View Team</a>
+                <a href="/our-ceo" class="view-team-btn">View Our CEO</a>
             </div>
         </div>
     </div>

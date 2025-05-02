@@ -16,22 +16,22 @@ class PortfolioController extends Controller
                     'img' => 'assets/img/KEYSTONE REALTY-02.jpg',
                     'sub_projects' => [
                         [
-                            'title' => 'Logo Design',
+                            'title' => '',
                             'description' => '',
                             'img' => 'assets/img/KEYSTONE1.jpg'
                         ],
                         [
-                            'title' => 'Brand Guidelines',
+                            'title' => '',
                             'description' => '',
                             'img' => 'assets/img/image2.jpg'
                         ],
                         [
-                            'title' => 'Stationery Design',
+                            'title' => '',
                             'description' => '',
                             'img' => 'assets/img/KEYSTONE REALTY_KEYSTON 1.jpg'
                         ],
                         [
-                            'title' => 'Stationery Design',
+                            'title' => '',
                             'description' => '',
                             'img' => 'assets/img/KEYSTONE REALTY_KEYSTON 1 copy-05.jpg'
                         ]
@@ -40,20 +40,20 @@ class PortfolioController extends Controller
                 [
                     'title' => 'Axam Brand Identity',
                     'description' => '',
-                    'img' => 'assets/img/background.png',
+                    'img' => 'assets/img/AXAM/axam csrd.jpg',
                     'sub_projects' => [
                         [
-                            'title' => 'Logo Design',
+                            'title' => '',
                             'description' => '',
                             'img' => 'assets/img/AXAM/Truck.jpg'
                         ],
                         [
-                            'title' => 'Brand Guidelines',
+                            'title' => '',
                             'description' => '',
                             'img' => 'assets/img/AXAM/axam csrd.jpg'
                         ],
                         [
-                            'title' => 'Stationery Design',
+                            'title' => '',
                             'description' => '',
                             'img' => 'assets/img/AXAM/axam frame.jpg'
                         ],
@@ -62,7 +62,7 @@ class PortfolioController extends Controller
                 [
                     'title' => 'Rapidique Brand Identity',
                     'description' => '',
-                    'img' => 'assets/img/image13.jpg',
+                    'img' => 'assets/img/image12.jpg',
                     'sub_projects' => [
                         [
                             'title' => '',
@@ -77,7 +77,7 @@ class PortfolioController extends Controller
                         [
                             'title' => '',
                             'description' => '',
-                            'img' => 'assets/img/image12.jpg'
+                            'img' => 'assets/img/image13.jpg'
                         ],
                     ]
                 ],
@@ -178,19 +178,19 @@ class PortfolioController extends Controller
                     ]
                 ],
                 [
-                    'title' => 'Marketing Collateral',
+                    'title' => '',
                     'description' => '',
                     'img' => 'assets/img/flyer2.jpg',
                     'sub_projects' => []
                 ],
                 [
-                    'title' => 'Marketing Collateral',
+                    'title' => '',
                     'description' => '',
                     'img' => 'assets/img/flyer3.jpg',
                     'sub_projects' => []
                 ],
                 [
-                    'title' => 'Marketing Collateral',
+                    'title' => '',
                     'description' => '',
                     'img' => 'assets/img/commercial.jpg',
                     'sub_projects' => []
@@ -201,7 +201,7 @@ class PortfolioController extends Controller
             'title' => 'Web & Mobile Apps',
             'projects' => [
                 [
-                    'title' => 'E-Commerce Website Design',
+                    'title' => 'Website Design',
                     'description' => '',
                     'img' => 'assets/img/Mockup2.jpg',
                     'sub_projects' => [

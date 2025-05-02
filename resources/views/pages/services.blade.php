@@ -254,15 +254,16 @@
                 <div class="row services">
                     <!-- Service Cards -->
                     @foreach ($services as $slug => $service)
-                    <div class="service-card">
-                        <img src="{{$service['img']}}" alt="{{$service['title']}}" class="service-image">
-                        <div class="service-label">
-                            <div class="service-name">
-                                <a href="{{ route('services.show', $slug) }}"><strong>{{$service['title']}}</strong></a>
+                    <a href="{{ route('services.show', $slug) }}" class="service-card-link">
+                        <div class="service-card">
+                            <img src="{{$service['img']}}" alt="{{$service['title']}}" class="service-image" loading="lazy">
+                            <div class="service-label">
+                                <div class="service-name">
+                                    <strong>{{$service['title']}}</strong>
+                                </div>
                             </div>
-                            
                         </div>
-                    </div>
+                    </a>
                     @endforeach
                 </div>
             </div>
@@ -284,7 +285,7 @@
                             <p>The refreshed brand identity established AXAM Resource Limited as a modern and trustworthy construction firm, reinforcing its mission to build with purpose and visual appeal across all platforms.</p>
                         </div>
                         <div class="case-study-image">
-                            <img src="assets/img/axam.png" alt="AXAM Resources Limited branded green truck">
+                            <img src="assets/img/axam.PNG" alt="AXAM Resources Limited branded green truck" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -307,7 +308,7 @@
                             <p>The new brand identity and corporate documents elevated Christell Ushering Agency's presentation, attracting higher-profile clients and boosting their credibility in the event industry. Their enhanced professional image led to increased client inquiries and secured several high-value contracts.</p>
                         </div>
                         <div class="case-study-image">
-                            <img src="assets/img/Cover.jpg" alt="Christell Ushering Agency branded materials">
+                            <img src="assets/img/Cover.jpg" alt="Christell Ushering Agency branded materials" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -327,7 +328,7 @@
                             <p>The professionally designed business plan enhanced Glaft Gh. Limited's credibility, making a strong impression on potential investors. It effectively communicated their vision and growth strategy, opening doors to new opportunities and driving substantial business growth.</p>
                         </div>
                         <div class="case-study-image">
-                            <img src="assets/img/glaft.png" alt="Glaft Gh. Limited business plan">
+                            <img src="assets/img/glaft.png" alt="Glaft Gh. Limited business plan" loading="lazy">
                         </div>
                     </div>
                 </div>

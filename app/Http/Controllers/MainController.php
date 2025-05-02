@@ -79,9 +79,9 @@ class MainController extends Controller
                 'slug' => 'social-media-marketing',
                 'img' => 'assets/img/social.jpg',
                 'works' => [
-                    'Strategy',
-                    'Storytelling',
-                    'Positioning'
+                    // 'Strategy',
+                    // 'Storytelling',
+                    // 'Positioning'
                 ]
             ]
     ];
@@ -203,7 +203,7 @@ class MainController extends Controller
         // Validate form data
         $validated = $request->validate([
             'service' => 'required|string',
-            'work' => 'required|string',
+            'work' => 'string',
             'name' => 'required|string|max:255',
             'email' => 'required|email|max:255',
             'phone' => 'required|string|max:20',

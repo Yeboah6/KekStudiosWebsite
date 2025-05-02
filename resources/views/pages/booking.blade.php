@@ -25,6 +25,10 @@
         width: 10%
     }
 
+    p .let {
+        font-size: 1rem;
+    }
+
 }
 
 </style>
@@ -80,7 +84,7 @@
                     <div class="col-xl-8 col-lg-9 col-md-12">
                         <div class="hero__caption hero__caption3 text-center book">
                             <h1 data-animation="fadeInLeft" data-delay=".6s" style="color: #DAA33E">Book {{ $service["title"] }}</h1>
-                            <p data-animation="fadeInLeft" data-delay=".8s">Let's bring your vision to life</p>
+                            <p class="let" data-animation="fadeInLeft" data-delay=".8s">Let's bring your vision to life</p>
                         </div>
                     </div>
                 </div>
@@ -99,7 +103,13 @@
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="booking-form-wrapper">
-                        <a href="{{ url('/services') }}" class="button boxed-btn btn-lg">Back</a>
+                        <div class="row">
+                            <div class="col-xl-12 ">
+                                <div class="more-btn text mt-20">
+                                    <a href="/services" class="btn">Back</a>
+                                </div>
+                            </div>
+                        </div>
                         <br/>
                         <br/>
                         <div class="section-title text-center mb-5">
@@ -237,12 +247,12 @@
                                     <div class="form-check mb-4">
                                         <input class="form-check-input" type="checkbox" id="terms" name="terms" required>
                                         <label class="form-check-label" for="terms">
-                                            I agree to the <a href="#" class="text-primary">terms and conditions</a> <span class="text-danger">*</span>
+                                             I agree to the <a href="#" class="text-primary">terms and conditions</a> <span class="text-danger">*</span>
                                         </label>
                                     </div>
                                 </div>
                                 <div class="col-12 text-center">
-                                    <button type="submit" class="button boxed-btn btn-lg" style="border-radius: 30px;">Submit Booking Request</button>
+                                    <button type="submit" class="btn" style="border-radius: 30px;">Submit Booking Request</button>
                                 </div>
                             </div>
                         </form>
@@ -305,9 +315,9 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xl-12 ">
-                        <div class="more-btn text-center mt-20">
-                            <a href="/contact" class="btn">Go to Support</a>
+                    <div class="col-xl-12" >
+                        <div class="more-btn text-center mt-10">
+                            <a href="/contact"class="btn">Go to Support</a>
                         </div>
                     </div>
                 </div>

@@ -12,7 +12,7 @@ Route::post('/send-mail', [MainController::class, 'sendMessage']) -> name('send.
 Route::get('/services', [MainController::class, 'services']) -> name('services');
 Route::get('/about-us', [MainController::class, 'about']) -> name('about');
 Route::get('/portfolio', [PortfolioController::class, 'portfolio']) -> name('portfolio');
-Route::get('/our-team', [MainController::class, 'team']) -> name('our-team');
+Route::get('/our-ceo', [MainController::class, 'team']) -> name('our-team');
 Route::get('/testimony', [MainController::class, 'testimony']) -> name('testimony');
 
 Route::get('/services/{service}', [MainController::class, 'show'])->name('services.show')

@@ -81,7 +81,6 @@
     .project-card img {
         width: 100%;
         height: 250px;
-        object-fit: cover;
     }
     
     .project-info {
@@ -115,7 +114,7 @@
     .sub-project img {
         width: 100%;
         height: 200px;
-        object-fit: cover;
+        /* object-fit: cover; */
         border-radius: 8px;
         margin-bottom: 1rem;
     }
@@ -126,7 +125,7 @@
         }
 
         .project-card img {
-            height: 400px;
+            height: 250px;
         }
     }
 </style>

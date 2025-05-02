@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>@yield('title') | KEK Studios </title>
-    <meta name="description" content="">
+    <title>KEKStudios Official | @yield('title') </title>
+    <meta name="description" content="KEKStudios: Your complete creative partner for brand identity design, web & mobile app development, UI/UX, commercial printing, event branding, and strategic marketing solutions. Transform your vision into powerful digital and print experiences.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="../assets/img/loader2.png">
@@ -43,9 +43,9 @@
     @yield('content')
 
       <!-- Scroll Up -->
-<div id="back-top" >
-    <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
-  </div>
+    <div id="back-top" >
+        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
   
   <!-- JS here -->
   
@@ -94,5 +94,5 @@
   <script src="../assets/js/plugins.js"></script>
   <script src="../assets/js/main.js"></script>
   
-  </body>
-  </html>
+</body>
+</html>
