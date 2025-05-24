@@ -83,8 +83,8 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-xl-8 col-lg-9 col-md-12">
                         <div class="hero__caption hero__caption3 text-center book">
-                            <h1 data-animation="fadeInLeft" data-delay=".6s" style="color: #DAA33E">Book {{ $service["title"] }}</h1>
-                            <p class="let" data-animation="fadeInLeft" data-delay=".8s">Let's bring your vision to life</p>
+                            <h1 data-animation="fadeInLeft" data-delay=".6s" style="color: #DAA33E"> {{ $service["title"] }}</h1>
+                            <p class="let" data-animation="fadeInLeft" data-delay=".8s" style="color: #fff;">Let's bring your vision to life</p>
                         </div>
                     </div>
                 </div>

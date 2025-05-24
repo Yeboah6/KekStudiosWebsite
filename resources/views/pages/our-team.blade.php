@@ -112,13 +112,24 @@
         padding-bottom: 100%; /* Creates a square aspect ratio */
         overflow: hidden;
     }
+
+    .info {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 125%;
+        overflow: hidden;
+    }
+
+    .info h2 {
+        font-size: 30px;    
+    }
     
     .director-image {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
         object-fit: cover;
         transition: transform 0.3s ease;
     }
@@ -163,7 +174,7 @@
     .director-info {
         background-color: #2c3e50;
         color: #fff;
-        padding: 10px;
+        padding: 16px;
         text-align: center;
     }
     
@@ -199,15 +210,12 @@
     }
     
     .social a:hover {
-        background-color: #F4A300;
+        background-color: #DAA33E;
         transform: translateY(-3px);
     }
     
     /* Responsive styles */
     @media (max-width: 991px) {
-        /* .directors-grid {
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        } */
         
         .board-title {
             font-size: 28px;
@@ -250,6 +258,16 @@
             width: 140px;
             margin-bottom: 30px;
         }
+    }
+
+    @media (max-width: 480px) {
+        .info {
+            padding-bottom: 180%;
+        }
+        .info h2 {
+            font-size: 2.5rem;    
+        }
+       
     }
 </style>
 
@@ -300,6 +318,60 @@
                         <p class="director-position">Lead Creative & CEO</p>
                     </div>
                 </div>
+                {{-- <div class="director-card"> --}}
+                    
+                    <div class="info">
+                        <h2>About me</h2>
+                        {{-- <hr> --}}
+                        <p>
+                            I 
+                            specialize in crafting high-impact pitch 
+                            decks, business plans, and corporate designs 
+                            that help businesses stand out and succeed. 
+                            As the Founder and CEO of KEKStudios 
+                            Creative Hub, I transform complex ideas into 
+                            clear, persuasive visuals that drive results — 
+                            from securing funding to building brand 
+                            credibility
+                        </p>
+<br>
+                        <h2> The Problems I Solve</h2>
+                        {{-- <hr> --}}
+                        <p>
+                            I help businesses turn complex ideas into 
+                            clear, persuasive visuals, making it easier to 
+                            secure funding, build credibility, and stand 
+                            out
+                        </p>
+<br>
+                        <h2>Who I Serve</h2>
+                            <ul>
+                                <li>
+                                    <p>
+                                        Startups and Entrepreneurs who need to pitch their 
+                                        ideas and secure funding
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Corporate Brands seeking polished business 
+                                        documents and standout brand identities.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Agencies and Teams needing expert design support 
+                                        for presentations, UI/UX, and social media.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Small Businesses looking to build a strong brand 
+                                        presence and communicate their vision clearly.
+                                    </p>
+                                </li>
+                            </ul>
+                    </div>
             </div>
         </div>
     </section>

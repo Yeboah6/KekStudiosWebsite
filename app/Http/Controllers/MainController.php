@@ -35,7 +35,7 @@ class MainController extends Controller
             ]
         ],
         'web-mobile-applications' => [
-            'title' => 'Web & Mobile Applications Development',
+            'title' => 'Web & Mobile Apps Development',
             'slug' => 'web-mobile-applications',
             'img' => 'assets/img/Mockup2.jpg',
             'works' => [
@@ -240,19 +240,20 @@ class MainController extends Controller
         $saveProject = $booking -> save();
         if ($saveProject) {
             Mail::to('kekstudiosofficial@gmail.com') -> send(new BookingMail($booking));
+            Mail::to($booking -> email) -> send(new BookingMail($booking));
         }
-        return redirect() -> back();
-        // return redirect()->route('booking.confirmation')->with([
-        //     'success' => 'Your booking request has been submitted successfully!',
-        //     'service' => $this->services[$service]['title'],
-        //     'booking' => [
-        //         'service_title' => $this->services[$service]['title'],
-        //         'project_title' => $request->project_title,
-        //         'name' => $request->name,
-        //         'email' => $request->email,
-        //         'phone' => $request->phone
-        //     ]
-        // ]);
+        // return redirect() -> back();
+        return redirect()->route('booking.confirmation')->with([
+            'success' => 'Your booking request has been submitted successfully!',
+            'service' => $this->services[$service]['title'],
+            'booking' => [
+                'service_title' => $this->services[$service]['title'],
+                'project_title' => $request->project_title,
+                'name' => $request->name,
+                'email' => $request->email,
+                'phone' => $request->phone
+            ]
+        ]);
     }
 
     public function confirmation()
@@ -263,7 +264,7 @@ class MainController extends Controller
         }
         
         return view('pages.confirmation', [
-            'service' => session('service')
+            'services' => session('services')
         ]);
     }
 

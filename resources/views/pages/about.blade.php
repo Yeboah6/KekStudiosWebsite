@@ -13,106 +13,6 @@
         margin: 0 auto;
         padding: 0 15px;
     }
-    
-    .logo-container {
-        display: flex;
-        align-items: center;
-    }
-    
-    .logo {
-        display: flex;
-        margin-bottom: 15px;
-    }
-    
-    .logo-piece {
-        width: 100px;
-        height: 80px;
-    }
-    
-    .pizza-logo {
-        background-color: white;
-        color: black;
-        border: 2px solid #ff4d4d;
-        border-radius: 10px;
-        padding: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-    }
-    
-    .chicken-logo {
-        background-color: #ff4d4d;
-        color: white;
-        border-radius: 10px;
-        padding: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-    }
-    
-    nav {
-        display: flex;
-        justify-content: flex-end;
-    }
-    
-    nav ul {
-        list-style: none;
-        display: flex;
-        padding: 0;
-        margin: 0;
-        flex-wrap: wrap;
-    }
-    
-    nav ul li {
-        margin-left: 30px;
-        margin-bottom: 10px;
-    }
-    
-    nav ul li a {
-        text-decoration: none;
-        color: #333;
-        font-weight: bold;
-        font-size: 16px;
-    }
-    
-    .header-flex {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    
-    .hero {
-        background-size: cover;
-        background-position: center;
-        color: white;
-        text-align: center;
-        padding: 80px 0;
-        position: relative;
-    }
-    
-    .hero::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0,0,0,0.5);
-    }
-    
-    .hero-content {
-        position: relative;
-        z-index: 1;
-    }
-    
-    .hero h1 {
-        font-size: 2.5rem;
-        margin-bottom: 20px;
-    }
-    
     .about-section {
         padding: 60px 0;
     }
@@ -137,7 +37,7 @@
     }
     
     .welcome-title {
-        font-size: 4rem;
+        font-size: 3rem;
         margin-bottom: 20px;
         color: #1C4E8F;
         text-align: center;
@@ -269,7 +169,7 @@
     
     .value-card h4 {
         color: #1C4E8F;
-        font-size: 2rem;
+        font-size: 1.3rem;
         margin-bottom: 10px;
         font-weight: 600;
     }
@@ -424,10 +324,6 @@
             order: -1;
         }
         
-        .hero h1 {
-            font-size: 2rem;
-        }
-        
         .welcome-title,
         .journey-title,
         .team-title,
@@ -458,10 +354,6 @@
             width: 95%;
         }
         
-        .hero {
-            padding: 60px 0;
-        }
-        
         .about-section,
         .journey-section,
         .team-section,
@@ -484,21 +376,13 @@
         
         .journey-title-block,
         .value-card h4 {
-            font-size: 2.5rem;
+            font-size: 2rem;
         }
         
         .view-team-btn {
             padding: 10px 25px;
         }
-        
-        nav ul {
-            justify-content: center;
-        }
-        
-        nav ul li {
-            margin: 0 15px 10px;
-        }
-        
+    
         .core-values-grid {
             grid-template-columns: 1fr;
         }
@@ -521,10 +405,6 @@
         .team-section,
         .vmcv-section {
             padding: 30px 0;
-        }
-        
-        .hero h1 {
-            font-size: 1.8rem;
         }
         
         .welcome-title,
@@ -611,12 +491,6 @@
             font-size: 1.6rem
         }
     }
-
-    /* @media (max-width: 400px) {
-        .about-content p {
-            font-size: 1rem;
-        }
-    } */
 </style>
 <main>
     <!-- Slider Area Start-->

@@ -230,11 +230,11 @@
         <!-- Slider Area Start-->
         <div class="slider-area slider-bg" style="background: #0B1F3A">
             <!-- Single Slider -->
-            <div class="single-slider d-flex align-items-center slider-height2">
+            <div class="single-slider d-flex align-items-center slider-height3">
                 <div class="container">
                     <div class="row align-items-center justify-content-center">
                         <div class="col-xl-8 col-lg-9 col-md-12">
-                            <div class="hero__caption hero__caption2 text-center">
+                            <div class="hero__caption hero__caption3 text-center">
                                 <h1 data-animation="fadeInLeft" data-delay=".6s" style="color: #DAA33E">Our Services</h1>
                             </div>
                         </div>
@@ -242,9 +242,6 @@
                 </div>
             </div>    
             <!-- Slider Shape -->
-            <div class="slider-shape d-none d-lg-block">
-                <img class="slider-shape1" src="assets/img/hero/top-left-shape.png" alt="">
-            </div>
         </div>
         <!-- Slider Area End -->
         
@@ -285,7 +282,7 @@
                             <p>The refreshed brand identity established AXAM Resource Limited as a modern and trustworthy construction firm, reinforcing its mission to build with purpose and visual appeal across all platforms.</p>
                         </div>
                         <div class="case-study-image">
-                            <img src="assets/img/axam.PNG" alt="AXAM Resources Limited branded green truck" loading="lazy">
+                            <img src="assets/img/axam csrd.jpg" alt="AXAM Resources Limited branded green truck" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -328,7 +325,7 @@
                             <p>The professionally designed business plan enhanced Glaft Gh. Limited's credibility, making a strong impression on potential investors. It effectively communicated their vision and growth strategy, opening doors to new opportunities and driving substantial business growth.</p>
                         </div>
                         <div class="case-study-image">
-                            <img src="assets/img/glaft.png" alt="Glaft Gh. Limited business plan" loading="lazy">
+                            <img src="assets/img/13-Free .jpg" alt="Glaft Gh. Limited business plan" loading="lazy">
                         </div>
                     </div>
                 </div>

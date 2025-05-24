@@ -16,7 +16,7 @@ Route::get('/our-ceo', [MainController::class, 'team']) -> name('our-team');
 Route::get('/testimony', [MainController::class, 'testimony']) -> name('testimony');
 
 Route::get('/services/{service}', [MainController::class, 'show'])->name('services.show')
-->where('service', 'brand-identity-design|commercial-printing|web-mobile-applications|ui-ux-design|event-campaign-branding|creative-strategy-consulting');
+->where('service', 'brand-identity-design|commercial-printing|web-mobile-applications|ui-ux-design|event-campaign-branding|creative-strategy-consulting|social-media-marketing');
 
 Route::post('/services/{service}', [MainController::class, 'store'])->name('services.store')
 ->where('service', 'brand-identity-design|commercial-printing|web-mobile-applications|ui-ux-design|event-campaign-branding|creative-strategy-consulting|social-media-marketing');

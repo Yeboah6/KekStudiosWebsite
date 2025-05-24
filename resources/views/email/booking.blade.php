@@ -79,7 +79,6 @@
             font-weight: 600;
             color: #555;
             display: inline-block;
-            /* width: 80px; */
         }
         .email-body .field-value {
             color: #333;
@@ -225,10 +224,6 @@
                     </div>
                 </p>
                 
-                
-                
-                <p>This message was received through the contact form on your website.</p>
-                
                 <p>You can also visit our website to see more customer interactions and manage your responses.</p>
             </td>
         </tr>
@@ -240,18 +235,6 @@
                     <a href="mailto:kekstudiosofficial1@gmail.com">kekstudiosofficial1@gmail.com</a> | 
                     <a href="tel:+233 55 369 6305">+233 55 369 6305</a>
                 </p>
-                
-                <div class="social-links">
-                    <span class="social-icon">
-                        <a href="https://www.behance.net/kekstudiosofficial"><i class="fab fa-behance"></i></a>
-                    </span>
-                    <span class="social-icon">
-                        <a href="https://www.linkedin.com/in/emmanuel-kofi-ketsi/"><i class="fab fa-linkedin"></i></a>
-                    </span>
-                    <span class="social-icon">
-                        <a href="https://www.instagram.com/kekstudios_official?igsh=azBuejV0YnplMnVs" aria-label="Instagram">i</a>
-                    </span>
-                </div>
             </td>
         </tr>
     </table>

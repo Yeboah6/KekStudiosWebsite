@@ -58,12 +58,14 @@
                                 <div class="form-group">
                                     <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" 
                                         placeholder = 'Enter Message' 
-                                        placeholder="Enter Message"></textarea>
+                                        placeholder="Enter Message">
+                                    </textarea>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-12">
                                 <div class="form-group">
-                                    <input class="form-control valid" name="name" id="name" type="text" 
+                                    <input class="form-control valid" name="name" id="name" type="text"
+                                        required 
                                         placeholder = 'Enter your name'
                                         placeholder="Enter your name">
                                 </div>
@@ -71,6 +73,7 @@
                             <div class="col-sm-6 col-12">
                                 <div class="form-group">
                                     <input class="form-control valid" name="email" id="email" type="email" 
+                                        required
                                         placeholder = 'Enter email address'
                                         placeholder="Email">
                                 </div>
@@ -78,6 +81,7 @@
                             <div class="col-12">
                                 <div class="form-group">
                                     <input class="form-control" name="subject" id="subject" type="text" 
+                                        required
                                         placeholder = 'Enter Subject'
                                         placeholder="Enter Subject">
                                 </div>

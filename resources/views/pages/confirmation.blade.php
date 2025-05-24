@@ -15,8 +15,8 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-xl-8 col-lg-9 col-md-12">
                         <div class="hero__caption hero__caption3 text-center">
-                            <h1 data-animation="fadeInLeft" data-delay=".6s">Booking Confirmed</h1>
-                            <p data-animation="fadeInLeft" data-delay=".8s">Thank you for choosing our services</p>
+                            <h1 data-animation="fadeInLeft" data-delay=".6s" style="color:#DAA33E;">Booking Confirmed</h1>
+                            <p data-animation="fadeInLeft" data-delay=".8s" style="color: #fff;">Thank you for choosing our services</p>
                         </div>
                     </div>
                 </div>
@@ -94,16 +94,10 @@
                         </div>
 
                         <div class="text-center">
-                            <a href="{{ route('services.show') }}">{{ $service->title }}</a>
-                            {{-- <a href="{{ route('services.show') }}" class="button boxed-btn">Browse More Services</a> --}}
+                            {{-- <a href="{{ route('services.show') }}">{{ $service->title }}</a> --}}
+                            {{-- <a href="{{ route('services.show') }}" class="button boxed-btn"> {{ $service->title }} Browse More Services</a> --}}
                             <a href="{{ route('home') }}" class="button boxed-btn btn-outline ml-3">Return to Homepage</a>
                         </div>
-                        
-                        {{-- <div class="text-center">
-                            <a href="{{ route('services.show', ['service' => $service['slug']]) }}">{{ $service['title'] }}</a>
-                            <a href="{{ route('services.show') }}" class="button boxed-btn">Browse More Services</a>
-                            <a href="{{ route('home') }}" class="button boxed-btn btn-outline ml-3">Return to Homepage</a>
-                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -130,6 +124,7 @@
     }
     
     .section-padding {
+        /* margin-top: 60px; */
         padding: 80px 0;
     }
     

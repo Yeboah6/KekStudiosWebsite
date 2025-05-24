@@ -49,7 +49,7 @@
                                     <li><a href="/services">Services</a></li>
                                     <li><a href="/portfolio">Portfolio</a></li>
                                     <li><a href="/contact">Contact</a></li>
-                                    <li><a href="/our-team">Meet our Team</a></li>
+                                    <li><a href="/our-ceo">Meet our CEO</a></li>
                                 </ul>
                             </div>
                         </div>
