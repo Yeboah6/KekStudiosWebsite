@@ -119,13 +119,13 @@
         margin-bottom: 1rem;
     }
 
-    @media (max-width:550px) {
+    @media (max-width:500px) {
         .sub-project img {
             height: 350px;
         }
 
         .project-card img {
-            height: 250px;
+            height: 300px;
         }
     }
 </style>

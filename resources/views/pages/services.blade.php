@@ -253,7 +253,7 @@
                     @foreach ($services as $slug => $service)
                     <a href="{{ route('services.show', $slug) }}" class="service-card-link">
                         <div class="service-card">
-                            <img src="{{$service['img']}}" alt="{{$service['title']}}" class="service-image" loading="lazy">
+                            <img src="{{$service['img']}}" alt="{{$service['title']}}" class="service-image">
                             <div class="service-label">
                                 <div class="service-name">
                                     <strong>{{$service['title']}}</strong>
@@ -340,7 +340,7 @@
                     @foreach ($clients as $client)
                         <div class="value-card">
                             <div class="value-icon">
-                                <img src="{{$client['logo']}}" alt="">
+                                <img src="{{$client['logo']}}" alt="" loading="lazy">
                             </div>
                         </div>
                     @endforeach

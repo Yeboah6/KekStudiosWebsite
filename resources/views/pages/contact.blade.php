@@ -20,10 +20,6 @@
                     </div>
                 </div>
             </div>
-        </div>    
-        <!-- Slider Shape -->
-        <div class="slider-shape d-none d-lg-block">
-            <img class="slider-shape1" src="assets/img/hero/top-left-shape.png" alt="">
         </div>
     </div>
     <!-- Slider Area End -->
