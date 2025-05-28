@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [MainController::class, 'home']) -> name('home');
@@ -22,3 +23,24 @@ Route::post('/services/{service}', [MainController::class, 'store'])->name('serv
 ->where('service', 'brand-identity-design|commercial-printing|web-mobile-applications|ui-ux-design|event-campaign-branding|creative-strategy-consulting|social-media-marketing');
 
 Route::get('/booking/confirmation', [MainController::class, 'confirmation']) -> name('booking.confirmation');
+
+
+// Admin Routes
+
+Route::get('/admin/login', [AdminController::class, 'login']) -> name('admin.login');
+Route::get('/admin/welcome-page', [AdminController::class, 'welcomePage']) -> name('admin.welcome-page');
+Route::get('/admin/booking', [AdminController::class, 'Booking']) -> name('admin.booking');
+
+//Customers
+Route::get('/admin/customers/dashboard', [AdminController::class, 'CustomerDashboard']) -> name('admin.customers.dashboard');
+Route::get('/admin/customers/clients', [AdminController::class, 'CustomerClients']) -> name('admin.customers.clients');
+Route::get('/admin/customers/add-clients', [AdminController::class, 'AddClients']) -> name('admin.customers.add.clients');
+
+// Projects
+Route::get('/admin/projects/dashboard', [AdminController::class, 'ProjectDashboard']) -> name('admin.projects.dashboard');
+Route::get('/admin/projects/projects', [AdminController::class, 'ProjectProjects']) -> name('admin.projects.projects');
+Route::get('/admin/projects/add-projects', [AdminController::class, 'AddProjects']) -> name('admin.projects.add.projects');
+
+// Payments
+Route::get('/admin/payments/dashboard', [AdminController::class, 'PaymentDashboard']) -> name('admin.payments.dashboard');
+Route::get('/admin/payments/payments', [AdminController::class, 'PaymentPayments']) -> name('admin.payments.payments');

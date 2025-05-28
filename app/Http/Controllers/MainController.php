@@ -74,16 +74,16 @@ class MainController extends Controller
                 'Positioning'
             ]
         ],
-            'social-media-marketing' => [
-                'title' => 'Social Media Marketing',
-                'slug' => 'social-media-marketing',
-                'img' => 'assets/img/social.jpg',
-                'works' => [
-                    // 'Strategy',
-                    // 'Storytelling',
-                    // 'Positioning'
-                ]
+        'social-media-marketing' => [
+            'title' => 'Social Media Marketing',
+            'slug' => 'social-media-marketing',
+            'img' => 'assets/img/social.jpg',
+            'works' => [
+                // 'Strategy',
+                // 'Storytelling',
+                // 'Positioning'
             ]
+        ]
     ];
 
     protected $clients = [
