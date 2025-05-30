@@ -39,21 +39,21 @@
 									</tr>
 								</thead>
 								<tbody>
-									<tr>
-                                        <td>CUST001</td>
+									@foreach ($clients as $client)
+										<tr>
+                                        <td>{{ $client -> client_id}}</td>
 										<td>
 											<div class="d-inline-block align-middle">
-												{{-- <img src="../../asset/images/user/avatar-1.jpg" alt="user image" class="img-radius align-top m-r-15" style="width:40px;"> --}}
 												<div class="d-inline-block">
-													<h6 class="m-b-0">Quinn Flynn</h6>
-													<p class="m-b-0">Qf@domain.com</p>
+													<h6 class="m-b-0">{{ $client -> full_name}}</h6>
+													<p class="m-b-0">{{ $client -> email}}</p>
 												</div>
 											</div>
 										</td>
-										<td>+233 57 676 0647</td>
-										<td>Edinburgh</td>
-										<td>KEKStudios Official</td>
-										<td>2011/04/25</td>
+										<td>{{ $client -> phone}}</td>
+										<td>{{ $client -> address}}</td>
+										<td>{{ $client -> company_name}}</td>
+										<td>{{ $client->created_at->format('M d, Y') }}</td>
 										<td>
 											<span class="badge badge-light-success">Active</span>
 											<div class="overlay-edit">
@@ -63,6 +63,8 @@
 											</div>
 										</td>
 									</tr>
+									@endforeach
+									
 								</tbody>
 							</table>
 						</div>

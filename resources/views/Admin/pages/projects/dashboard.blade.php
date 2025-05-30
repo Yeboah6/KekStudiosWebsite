@@ -26,7 +26,7 @@
             <div class="col-sm-3">
                 <div class="card bg-c-green text-white widget-visitor-card">
                     <div class="card-body text-center">
-                        <h2 class="text-white">18</h2>
+                        <h2 class="text-white">{{ $projectNo }}</h2>
                         <h6 class="text-white">Projects</h6>
                         <i class="feather icon-book"></i>
                     </div>

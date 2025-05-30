@@ -78,10 +78,11 @@ class MainController extends Controller
             'title' => 'Social Media Marketing',
             'slug' => 'social-media-marketing',
             'img' => 'assets/img/social.jpg',
-            'works' => [
-                // 'Strategy',
-                // 'Storytelling',
-                // 'Positioning'
+            'works'=> [
+                'Content Creation',
+                'Social Media Management',
+                'Digital Advertising',
+                'Analytics & Reporting'
             ]
         ]
     ];

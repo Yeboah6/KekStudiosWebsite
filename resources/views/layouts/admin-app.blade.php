@@ -11,14 +11,14 @@
     <meta name="keywords" content="">
     <meta name="author" content="Phoenixcoded" />
     <!-- Favicon icon -->
-    <link rel="icon" href="../../assets/img/loader1.png" type="image/x-icon">
+    <link rel="icon" href="../../../assets/img/loader1.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="../../asset/css/plugins/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="../../../asset/css/plugins/dataTables.bootstrap4.min.css">
 
-    <link rel="stylesheet" href="../../asset/css/plugins/trumbowyg.min.css">
+    <link rel="stylesheet" href="../../../asset/css/plugins/trumbowyg.min.css">
 
     <!-- vendor css -->
-    <link rel="stylesheet" href="../../asset/css/style.css">
+    <link rel="stylesheet" href="../../../asset/css/style.css">
     
     
 
@@ -34,31 +34,31 @@
     @yield('content')
 
         <!-- Required Js -->
-    <script src="../../asset/js/vendor-all.min.js"></script>
-    <script src="../../asset/js/plugins/bootstrap.min.js"></script>
-    <script src="../../asset/js/ripple.js"></script>
-    <script src="../../asset/js/pcoded.min.js"></script>
+    <script src="../../../asset/js/vendor-all.min.js"></script>
+    <script src="../../../asset/js/plugins/bootstrap.min.js"></script>
+    <script src="../../../asset/js/ripple.js"></script>
+    <script src="../../../asset/js/pcoded.min.js"></script>
 
 <!-- Apex Chart -->
-<script src="../../asset/js/plugins/apexcharts.min.js"></script>
+<script src="../../../asset/js/plugins/apexcharts.min.js"></script>
 <!-- Apex Chart -->
-<script src="../../asset/js/plugins/trumbowyg.min.js"></script>
+<script src="../../../asset/js/plugins/trumbowyg.min.js"></script>
 
 <!-- datatable Js -->
-<script src="../../asset/js/plugins/jquery.dataTables.min.js"></script>
-<script src="../../asset/js/plugins/dataTables.bootstrap4.min.js"></script>
-<script src="../../asset/js/plugins/buttons.colVis.min.js"></script>
-<script src="../../asset/js/plugins/buttons.print.min.js"></script>
-<script src="../../asset/js/plugins/pdfmake.min.js"></script>
-<script src="../../asset/js/plugins/jszip.min.js"></script>
-<script src="../../asset/js/plugins/dataTables.buttons.min.js"></script>
-<script src="../../asset/js/plugins/buttons.html5.min.js"></script>
-<script src="../../asset/js/plugins/buttons.bootstrap4.min.js"></script>
-<script src="../../asset/js/pages/data-export-custom.js"></script>
+<script src="../../../asset/js/plugins/jquery.dataTables.min.js"></script>
+<script src="../../../asset/js/plugins/dataTables.bootstrap4.min.js"></script>
+<script src="../../../asset/js/plugins/buttons.colVis.min.js"></script>
+<script src="../../../asset/js/plugins/buttons.print.min.js"></script>
+<script src="../../../asset/js/plugins/pdfmake.min.js"></script>
+<script src="../../../asset/js/plugins/jszip.min.js"></script>
+<script src="../../../asset/js/plugins/dataTables.buttons.min.js"></script>
+<script src="../../../asset/js/plugins/buttons.html5.min.js"></script>
+<script src="../../../asset/js/plugins/buttons.bootstrap4.min.js"></script>
+<script src="../../../asset/js/pages/data-export-custom.js"></script>
 
 
 <!-- custom-chart js -->
-<script src="../../asset/js/pages/dashboard-crm.js"></script>
+<script src="../../../asset/js/pages/dashboard-crm.js"></script>
 </body>
 
 </html>

@@ -13,6 +13,19 @@ return new class extends Migration
     {
         Schema::create('project_infos', function (Blueprint $table) {
             $table->id();
+            $table -> string('project_id');
+            $table->foreignId('client_infos_id')->constrained()->onDelete('cascade');
+            $table->string('service_type');
+            $table->string('category');
+            $table->string('order_service');
+            $table->string('project_title');
+            $table->text('project_description');
+            $table->string('attachment')->nullable();
+            $table->string('budget')->nullable();
+            $table->date('deadline')->nullable();
+            $table->string('out_source_expert') -> nullable();
+            $table->boolean('agreement')->default(0);
+            $table->text('add_notes')->nullable();
             $table->timestamps();
         });
     }

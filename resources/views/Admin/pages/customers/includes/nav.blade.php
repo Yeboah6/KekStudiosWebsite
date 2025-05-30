@@ -26,9 +26,9 @@
 					<li>
 						<a href="clients" class="nav-link"><span class="pcoded-micon"><i class="feather icon-users"></i></span><span class="pcoded-mtext">Clients</span></a>
 					</li>
-					<li>
+					{{-- <li>
 						<a href="add-clients" class="nav-link"><span class="pcoded-micon"><i class="feather icon-user-plus"></i></span><span class="pcoded-mtext">Add Clients</span></a>
-					</li>
+					</li> --}}
 					<li>
 						<a href="pending-clients" class="nav-link"><span class="pcoded-micon"><i class="feather icon-user-minus"></i></span><span class="pcoded-mtext">Pending Clients</span></a>
 					</li>

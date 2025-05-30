@@ -5,7 +5,7 @@
 				
 				<div class="">
 					<div class="main-menu-header">
-						<img class="" src="../../assets/img/loader1.png" alt="User-Profile-Image" style="width: 30%;">
+						<img class="" src="../../../assets/img/loader1.png" alt="User-Profile-Image" style="width: 30%;">
 					</div>
 					<div class="collapse" id="nav-user-link">
 						<ul class="list-inline">
@@ -25,9 +25,6 @@
 					</li>
 					<li class="">
 						<a href="projects" class="nav-link"><span class="pcoded-micon"><i class="feather icon-book"></i></span><span class="pcoded-mtext">Projects</span></a>
-					</li>
-					<li class="">
-						<a href="add-projects" class="nav-link"><span class="pcoded-micon"><i class="feather icon-file-plus"></i></span><span class="pcoded-mtext">Add Projects</span></a>
 					</li>
 					<li class="">
 						<a href="pending-projects" class="nav-link"><span class="pcoded-micon"><i class="feather icon-file-minus"></i></span><span class="pcoded-mtext">Pending Projects</span></a>

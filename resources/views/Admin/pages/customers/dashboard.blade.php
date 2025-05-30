@@ -26,7 +26,7 @@
             <div class="col-sm-3">
                 <div class="card bg-c-green text-white widget-visitor-card">
                     <div class="card-body text-center">
-                        <h2 class="text-white">18</h2>
+                        <h2 class="text-white">{{ $clientNo }}</h2>
                         <h6 class="text-white">Clients</h6>
                         <i class="feather icon-user-plus"></i>
                     </div>

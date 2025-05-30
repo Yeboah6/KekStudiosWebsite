@@ -26,21 +26,25 @@ Route::get('/booking/confirmation', [MainController::class, 'confirmation']) -> 
 
 
 // Admin Routes
-
 Route::get('/admin/login', [AdminController::class, 'login']) -> name('admin.login');
 Route::get('/admin/welcome-page', [AdminController::class, 'welcomePage']) -> name('admin.welcome-page');
-Route::get('/admin/booking', [AdminController::class, 'Booking']) -> name('admin.booking');
 
-//Customers
+Route::get('/admin/booking/client-info', [AdminController::class, 'ClientInfo']) -> name('admin.booking.client.info');
+Route::post('/admin/booking/client-info', [AdminController::class, 'SaveClientInfo']) -> name('save.client.info');
+
+Route::get('/admin/booking/project-info', [AdminController::class, 'ProjectInfo']) -> name('admin.booking.project.info');
+Route::post('/admin/booking/project-info', [AdminController::class, 'SaveProjectInfo']) -> name('save.project.info');
+
+//Customers Routes
 Route::get('/admin/customers/dashboard', [AdminController::class, 'CustomerDashboard']) -> name('admin.customers.dashboard');
 Route::get('/admin/customers/clients', [AdminController::class, 'CustomerClients']) -> name('admin.customers.clients');
-Route::get('/admin/customers/add-clients', [AdminController::class, 'AddClients']) -> name('admin.customers.add.clients');
+// Route::get('/admin/customers/add-clients', [AdminController::class, 'AddClients']) -> name('admin.customers.add.clients');
 
-// Projects
+// Projects Routes
 Route::get('/admin/projects/dashboard', [AdminController::class, 'ProjectDashboard']) -> name('admin.projects.dashboard');
 Route::get('/admin/projects/projects', [AdminController::class, 'ProjectProjects']) -> name('admin.projects.projects');
-Route::get('/admin/projects/add-projects', [AdminController::class, 'AddProjects']) -> name('admin.projects.add.projects');
+Route::get('/admin/projects/view-projects/{id}', [AdminController::class, 'ViewProjects']) -> name('admin.projects.view.projects');
 
-// Payments
+// Payments Routes
 Route::get('/admin/payments/dashboard', [AdminController::class, 'PaymentDashboard']) -> name('admin.payments.dashboard');
 Route::get('/admin/payments/payments', [AdminController::class, 'PaymentPayments']) -> name('admin.payments.payments');

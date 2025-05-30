@@ -342,7 +342,6 @@
                                     </div>
                                     <div class="founder-text">
                                         <span>Jacson Miller</span>
-                                        <p>Designer @Colorlib</p>
                                     </div>
                                 </div>
                             </div>

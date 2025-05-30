@@ -36,37 +36,33 @@
                                 <thead>
                                     <tr>
                                         <th>Project ID</th>
-                                        <th>Customer ID</th>
+                                        <th>Client ID</th>
                                         <th>Service Type</th>
                                         <th>Project Title</th>
-                                        <th>Estimated Amount</th>
-                                        {{-- <th>Additional Notes</th> --}}
                                         <th>Deadline</th>
                                         <th>Status</th>
                                         <th>Options</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
+                                    @foreach ($projects as $project)
+                                        <tr>
                                         <td>
-                                            <div>#14321</div>
+                                            <div>{{ $project -> project_id}}</div>
                                         </td>
                                         <td>
-                                            <div>CUST001</div>
+                                            <div>{{ $project -> client -> client_id}}</div>
                                         </td>
                                         <td>
-                                            <div>9/05/2025</div>
+                                            <div>{{ $project -> service_type}}</div>
                                         </td>
                                         <td>
                                             <div>
-                                                Printing
+                                                {{ $project -> project_title}}
                                             </div>
                                         </td>
                                         <td>
-                                            <div>12,890</div>
-                                        </td>
-                                        <td>
-                                            <div>MOMO PAY</div>
+                                            <div>{{ $project -> deadline->format('Y-m-d')}}</div>
                                         </td>
                                         <td>
                                             <div  class="badge badge-primary badge-pill">In Progress</div>
@@ -74,12 +70,14 @@
                                         <td>
                                             <div>
                                                 <a href="" class="btn btn-icon btn-success"><i class="feather icon-edit"></i></a>
-                                                <a href="" class="btn btn-icon btn-primary"><i class="feather icon-eye"></i></a>
+                                                <a href="{{'view-projects/'.$project -> id}}" class="btn btn-icon btn-primary"><i class="feather icon-eye"></i></a>
                                                 <a href="" class="btn btn-icon btn-danger"><i class="feather icon-trash-2"></i></a>
                                             </div>
                                         </td>
                                         
                                     </tr>
+                                    @endforeach
+                                    
                                 </tbody>
                             </table>
                         </div>
